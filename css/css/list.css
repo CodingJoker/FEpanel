@@ -1,0 +1,288 @@
+@charset "UTF-8";
+.main {
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  max-width: 1000px;
+  height: auto;
+  margin: 0 auto; }
+  .main .r {
+    width: 352px;
+    height: auto;
+    overflow: hidden;
+    float: right;
+    margin-top: 30px; }
+    .main .r h2 {
+      height: 50px;
+      font: 22px/50px "微软雅黑", Helvetica, Microsoft YaHei;
+      padding-left: 20px;
+      color: #595758;
+      border-bottom: 1px solid #efefee; }
+      .main .r h2 a {
+        text-decoration: none;
+        color: #595758; }
+  .main .l {
+    width: 625px;
+    height: auto;
+    overflow: hidden;
+    float: left; }
+
+ul.list {
+  height: auto;
+  overflow: hidden;
+  margin-top: 30px; }
+  ul.list li {
+    height: 160px;
+    overflow: hidden;
+    margin-bottom: 50px;
+    border: 1px solid #efefee;
+    position: relative; }
+    ul.list li div.i {
+      width: 262px;
+      height: 160px;
+      overflow: hidden;
+      position: absolute;
+      text-align: center;
+      vertical-align: middle;
+      left: 0;
+      top: 0; }
+      ul.list li div.i img {
+        width: 262px;
+        height: 160px; }
+    ul.list li div.c {
+      max-height: 160px;
+      overflow: hidden;
+      margin-left: 285px;
+      margin-right: 20px; }
+      ul.list li div.c h3 {
+        font: 22px/44px "微软雅黑", Helvetica, Microsoft YaHei;
+        margin-top: 10px;
+        color: #4d4948; }
+        ul.list li div.c h3 a {
+          color: #4d4948;
+          text-decoration: none; }
+        ul.list li div.c h3 a:hover, ul.list li div.c h3 a:active {
+          text-decoration: underline; }
+      ul.list li div.c p {
+        font: 14px/24px "微软雅黑", Helvetica, Microsoft YaHei;
+        color: #7c7d7d;
+        height: auto;
+        overflow: hidden;
+        border-bottom: 1px solid #e2e3e3;
+        padding-bottom: 15px; }
+        ul.list li div.c p a {
+          color: #7c7d7d;
+          text-decoration: none; }
+        ul.list li div.c p a:hover, ul.list li div.c p a:active {
+          text-decoration: underline; }
+      ul.list li div.c div.m {
+        height: 32px;
+        overflow: hidden;
+        border-bottom: 1px solid #e2e3e3;
+        font: 14px/32px SimHei, Helvetica, Arial, Verdana, sans-serif; }
+        ul.list li div.c div.m a.lc {
+          color: #e4b226;
+          text-decoration: none;
+          padding-right: 28px;
+          background: url("../images/car_21.png") no-repeat right center;
+          display: inline-block;
+          vertical-align: top;
+          margin-right: 20px; }
+        ul.list li div.c div.m span.rb {
+          height: auto;
+          overflow: hidden;
+          float: right;
+          display: inline-block; }
+        ul.list li div.c div.m a.tc {
+          color: #9f9e9f;
+          padding-left: 30px;
+          background: url("../images/car_23.png") no-repeat left center;
+          overflow: hidden;
+          display: inline-block;
+          text-decoration: none;
+          cursor: default;
+          vertical-align: top; }
+        ul.list li div.c div.m a.z {
+          color: #9f9e9f;
+          overflow: hidden;
+          display: inline-block;
+          text-decoration: none;
+          cursor: default;
+          vertical-align: top; }
+
+ul.list2 {
+  height: auto;
+  overflow: hidden;
+  margin-top: 10px; }
+  ul.list2 li {
+    height: auto;
+    overflow: hidden; }
+    ul.list2 li div.c {
+      height: auto;
+      overflow: hidden;
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-top: 10px; }
+      ul.list2 li div.c h3 {
+        font: 22px/44px "微软雅黑", Helvetica, Microsoft YaHei;
+        margin-top: 10px;
+        color: #4d4948; }
+        ul.list2 li div.c h3 a {
+          color: #4d4948;
+          text-decoration: none; }
+        ul.list2 li div.c h3 a:hover, ul.list2 li div.c h3 a:active {
+          text-decoration: underline; }
+      ul.list2 li div.c p {
+        font: 14px/24px "微软雅黑", Helvetica, Microsoft YaHei;
+        color: #7c7d7d;
+        height: auto;
+        overflow: hidden;
+        border-bottom: 1px solid #e2e3e3;
+        padding-bottom: 15px; }
+        ul.list2 li div.c p a {
+          color: #7c7d7d;
+          text-decoration: none; }
+        ul.list2 li div.c p a:hover, ul.list2 li div.c p a:active {
+          text-decoration: underline; }
+      ul.list2 li div.c div.m {
+        height: 32px;
+        overflow: hidden;
+        border-bottom: 1px solid #e2e3e3;
+        font: 14px/32px SimHei, Helvetica, Arial, Verdana, sans-serif; }
+        ul.list2 li div.c div.m a.lc {
+          color: #e4b226;
+          text-decoration: none;
+          padding-right: 28px;
+          background: url("../images/car_21.png") no-repeat right center;
+          display: inline-block; }
+        ul.list2 li div.c div.m a.tc {
+          color: #9f9e9f;
+          padding-left: 30px;
+          background: url("../images/car_23.png") no-repeat left center;
+          overflow: hidden;
+          display: inline-block;
+          float: right;
+          text-decoration: none;
+          cursor: default; }
+
+div.noHandsHidden {
+  height: auto;
+  overflow: hidden;
+  padding: 220px 0;
+  border: 2px solid #e5e6e6;
+  max-width: 1000px;
+  margin: 30px auto 0; }
+  div.noHandsHidden h3 {
+    font: 30px/68px "微软雅黑", Helvetica, Microsoft YaHei;
+    color: #595757;
+    border-bottom: 1px solid #e5e6e6;
+    text-align: center;
+    height: auto;
+    overflow: hidden;
+    margin: 0 200px; }
+  div.noHandsHidden p {
+    font: 16px/52px "微软雅黑", Helvetica, Microsoft YaHei;
+    color: #7d7d7d;
+    height: auto;
+    overflow: auto;
+    text-align: center; }
+  div.noHandsHidden div.goIndex {
+    height: 30px;
+    overflow: hidden;
+    text-align: center;
+    font: 14px/30px "微软雅黑", Helvetica, Microsoft YaHei;
+    color: #ffffff; }
+    div.noHandsHidden div.goIndex a {
+      text-decoration: none;
+      color: #fff; }
+    div.noHandsHidden div.goIndex a {
+      padding: 0 35px;
+      display: inline-block;
+      background: #fabe00; }
+
+@media (max-width: 768px) {
+  ul.list {
+    height: auto;
+    margin-top: 1.875rem; }
+    ul.list li {
+      height: auto;
+      margin-bottom: 1.25rem; }
+      ul.list li div.i {
+        width: 100%;
+        height: auto;
+        position: static; }
+        ul.list li div.i img {
+          width: 100%;
+          height: auto; }
+      ul.list li div.c {
+        max-height: auto;
+        margin-left: 0;
+        margin-right: 0; }
+        ul.list li div.c h3 {
+          font: 1.375rem/2.75rem "微软雅黑", Helvetica, Microsoft YaHei;
+          margin-top: 0;
+          height: auto;
+          padding: 0 0.625rem; }
+        ul.list li div.c p {
+          font: 0.875rem/1.5rem "微软雅黑", Helvetica, Microsoft YaHei;
+          padding: 0 0.625rem;
+          padding-bottom: 0.9375rem; }
+        ul.list li div.c div.m {
+          height: 2rem;
+          border-bottom: 1px solid #e2e3e3;
+          font: 0.875rem/2rem SimHei, Helvetica, Arial, Verdana, sans-serif;
+          padding: 0 0.625rem; }
+          ul.list li div.c div.m a.lc {
+            padding-right: 1.125rem;
+            margin-right: 0.625rem; }
+          ul.list li div.c div.m a.tc {
+            padding-left: 1.5625rem; }
+  .main .r {
+    width: 100%;
+    float: none;
+    margin-top: 30px; }
+    .main .r h2 {
+      height: 3.125rem;
+      font: 1.375rem/3.125rem "微软雅黑", Helvetica, Microsoft YaHei;
+      padding-left: 1.25rem; }
+  .main .l {
+    width: 100%; }
+  ul.list2 {
+    margin-top: 0.625rem; }
+    ul.list2 li div.c {
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: 0.625rem; }
+      ul.list2 li div.c h3 {
+        font: 1.375rem/2.75rem "微软雅黑", Helvetica, Microsoft YaHei;
+        margin-top: 0.625rem;
+        padding: 0 0.625rem; }
+      ul.list2 li div.c p {
+        font: 0.875rem/1.5rem "微软雅黑", Helvetica, Microsoft YaHei;
+        padding-bottom: 0.9375rem;
+        padding: 0 0.625rem; }
+      ul.list2 li div.c div.m {
+        height: 2rem;
+        padding: 0 0.625rem;
+        font: 0.875rem/2rem SimHei, Helvetica, Arial, Verdana, sans-serif; }
+        ul.list2 li div.c div.m a.lc {
+          padding-right: 1.75rem; }
+        ul.list2 li div.c div.m a.tc {
+          padding-left: 1.875rem; }
+  div.noHandsHidden {
+    padding: 0;
+    border: 0.125rem solid #e5e6e6;
+    margin: 30px auto 0; }
+    div.noHandsHidden h3 {
+      font: 1.875rem/4.25rem "微软雅黑", Helvetica, Microsoft YaHei;
+      margin: 0; }
+    div.noHandsHidden p {
+      font: 1rem/3.25rem "微软雅黑", Helvetica, Microsoft YaHei;
+      padding: 0 0.625rem; }
+    div.noHandsHidden div.goIndex {
+      height: 1.875rem;
+      margin-bottom: 1.25rem;
+      font: 0.875rem/1.875rem "微软雅黑", Helvetica, Microsoft YaHei; }
+      div.noHandsHidden div.goIndex a {
+        padding: 0 2.1875rem; } }
+

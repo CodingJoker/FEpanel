@@ -1,0 +1,355 @@
+@import "_car.scss";
+
+.main{
+  @include height-set();
+  position: relative;
+  max-width: 1000px;
+  height: auto;
+  margin: 0 auto;
+  .r{
+    width: 352px;
+    height: auto;
+    overflow: hidden;
+    float: right;
+    margin-top: 30px;
+    h2{
+      height: 50px;
+      font:22px/50px $f-yahei;
+      padding-left: 20px;
+      color: #595758;
+      @include afont(#595758);
+      border-bottom: 1px solid #efefee;
+    }
+  }
+  .l{
+    width: 625px;
+    height: auto;
+    overflow: hidden;
+    float: left;
+  }
+}
+ul.list{
+  height: auto;
+  overflow: hidden;
+  margin-top: 30px;
+  li{
+    height: 160px;
+    overflow: hidden;
+    margin-bottom: 50px;
+    border: 1px solid #efefee;
+    position: relative;
+    div.i{
+      width:262px;
+      height: 160px;
+      overflow: hidden;
+      position: absolute;
+      text-align: center;
+      vertical-align: middle;
+      left: 0;
+      top: 0;
+      img{
+        width: 262px;
+        height: 160px;
+      }
+    }
+    div.c{
+      max-height: 160px;
+      overflow: hidden;
+      margin-left: 285px;
+      margin-right: 20px;
+      h3{
+        font:22px/44px $f-yahei;
+        margin-top: 10px;
+        color: #4d4948;;
+        a{
+          color: #4d4948;
+          text-decoration: none;
+        }
+        a:hover,a:active{
+          text-decoration: underline;
+        }
+      }
+      p{
+        font: 14px/24px $f-yahei;
+        color: #7c7d7d;
+        a{
+          color: #7c7d7d;
+          text-decoration: none;
+        }
+        a:hover,a:active{
+          text-decoration: underline;
+        }
+        height: auto;
+        overflow: hidden;
+        border-bottom: 1px solid #e2e3e3;
+        padding-bottom: 15px;
+
+      }
+      div.m{
+        height: 32px;
+        overflow: hidden;
+        border-bottom: 1px solid #e2e3e3;
+        font:14px/32px $f-heiti;
+        a.lc{
+          color: #e4b226;
+          text-decoration: none;
+          padding-right: 28px;
+          background:url("../images/car_21.png") no-repeat right center;
+          display: inline-block;
+          vertical-align: top;
+          margin-right: 20px;
+        }
+        span.rb{
+          height: auto;
+          overflow: hidden;
+          float: right;
+          display: inline-block;
+        }
+        a.tc{
+          color: #9f9e9f;
+          padding-left: 30px;
+          background: url("../images/car_23.png") no-repeat left center;
+          overflow: hidden;
+          display: inline-block;
+          text-decoration: none;
+          cursor: default;
+          vertical-align: top;
+        }
+        a.z{
+          color: #9f9e9f;
+          overflow: hidden;
+          display: inline-block;
+          text-decoration: none;
+          cursor: default;
+          vertical-align: top;
+        }
+      }
+    }
+  }
+
+}
+ul.list2{
+  height: auto;
+  overflow: hidden;
+  margin-top: 10px;
+  li{
+    height: auto;
+    overflow: hidden;
+    div.c{
+      height: auto;
+      overflow: hidden;
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-top: 10px;
+      h3{
+        font:22px/44px $f-yahei;
+        margin-top: 10px;
+        color: #4d4948;;
+        a{
+          color: #4d4948;
+          text-decoration: none;
+        }
+        a:hover,a:active{
+          text-decoration: underline;
+        }
+      }
+      p{
+        font: 14px/24px $f-yahei;
+        color: #7c7d7d;
+        a{
+          color: #7c7d7d;
+          text-decoration: none;
+        }
+        a:hover,a:active{
+          text-decoration: underline;
+        }
+        height: auto;
+        overflow: hidden;
+        border-bottom: 1px solid #e2e3e3;
+        padding-bottom: 15px;
+
+      }
+      div.m{
+        height: 32px;
+        overflow: hidden;
+        border-bottom: 1px solid #e2e3e3;
+        font:14px/32px $f-heiti;
+        a.lc{
+          color: #e4b226;
+          text-decoration: none;
+          padding-right: 28px;
+          background:url("../images/car_21.png") no-repeat right center;
+          display: inline-block;
+        }
+        a.tc{
+          color: #9f9e9f;
+          padding-left: 30px;
+          background: url("../images/car_23.png") no-repeat left center;
+          overflow: hidden;
+          display: inline-block;
+          float: right;
+          text-decoration: none;
+          cursor: default;
+
+        }
+      }
+    }
+  }
+}
+
+div.noHandsHidden{
+  height: auto;
+  overflow: hidden;
+  padding: 220px 0;
+  border: 2px solid #e5e6e6;
+  max-width: 1000px;
+  margin: 30px auto 0;
+  h3{
+    font:30px/68px $f-yahei;
+    color: #595757;
+    border-bottom:1px solid #e5e6e6;
+    text-align: center;
+    height: auto;
+    overflow: hidden;
+    margin: 0 200px;
+  }
+  p{
+    font:16px/52px $f-yahei;
+    color: #7d7d7d;
+    height: auto;
+    overflow: auto;
+    text-align: center;
+    
+  }
+  div.goIndex{
+    height: 30px;
+    overflow: hidden;
+    text-align: center;
+    font:14px/30px $f-yahei;
+    color: #ffffff;
+    @include afont(#fff);
+    a{
+      padding: 0 35px;
+      display: inline-block;
+      background: #fabe00;
+    }
+  }
+}
+
+@media (max-width: 768px){
+  ul.list{
+    height: auto;
+    margin-top:rem(30);
+    li{
+      height:auto;
+      margin-bottom: rem(20);
+      div.i{
+        width:100%;
+        height: auto;
+        position:static;
+        img{
+          width: 100%;
+          height: auto;
+        }
+      }
+      div.c{
+        max-height:auto;
+        margin-left: 0;
+        margin-right:0;
+        h3{
+          font:rem(22)/rem(44) $f-yahei;
+          margin-top:0;
+          height: auto;
+          padding: 0 rem(10);
+        }
+        p{
+          font: rem(14)/rem(24) $f-yahei;
+          padding: 0 rem(10);
+          padding-bottom: rem(15);
+
+        }
+        div.m{
+          height: rem(32);
+          border-bottom: 1px solid #e2e3e3;
+          font:rem(14)/rem(32) $f-heiti;
+          padding: 0 rem(10);
+          a.lc{
+            padding-right: rem(18);
+            margin-right: rem(10);
+          }
+          a.tc{
+            padding-left: rem(25);
+          }
+        }
+      }
+    }
+
+  }
+  .main{
+    .r{
+      width: 100%;
+      float: none;
+      margin-top: 30px;
+      h2{
+        height: rem(50);
+        font:rem(22)/rem(50) $f-yahei;
+        padding-left: rem(20);
+      }
+    }
+    .l{
+      width: 100%;
+    }
+  }
+  ul.list2{
+    margin-top:rem(10);
+    li{
+      div.c{
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: rem(10);
+        h3{
+          font:rem(22)/rem(44) $f-yahei;
+          margin-top: rem(10);
+          padding: 0 rem(10);
+        }
+        p{
+          font: rem(14)/rem(24) $f-yahei;
+          padding-bottom: rem(15);
+          padding: 0 rem(10);
+        }
+        div.m{
+          height: rem(32);
+          padding: 0 rem(10);
+          font:rem(14)/rem(32) $f-heiti;
+          a.lc{
+            padding-right:rem(28);
+          }
+          a.tc{
+            padding-left: rem(30);
+          }
+        }
+      }
+    }
+  }
+  div.noHandsHidden{
+    padding: 0;
+    border: rem(2) solid #e5e6e6;
+    margin: 30px auto 0;
+    h3{
+      font:rem(30)/rem(68) $f-yahei;
+      margin: 0;
+    }
+    p{
+      font:rem(16)/rem(52) $f-yahei;
+      padding:0 rem(10);
+    }
+    div.goIndex{
+      height: rem(30);
+      margin-bottom: rem(20);
+      font:rem(14)/rem(30) $f-yahei;
+      a{
+        padding: 0 rem(35);
+      }
+    }
+  }
+}

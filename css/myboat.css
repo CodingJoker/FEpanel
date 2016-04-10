@@ -1,0 +1,54 @@
+body{
+	background: #F0FCFF url('/img/island.png') repeat-x 100% -500px;
+	background-size: 800px;
+	-webkit-animation: bg-move 80s ease-out infinite;
+}
+.mike{
+	position: absolute;
+	left: 0;
+	top: 46%;
+	width: 200px;
+	-webkit-animation:mike-chase 5s  ease-out infinite ;
+}
+
+.boat{
+	position: absolute;
+	left: 35%;
+	top:25%;
+		-webkit-animation:boat-float 2s linear infinite;
+}
+.boat img{
+	width: 450px;
+}
+.boat::after{
+	content: " ";
+	display: block;
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	left: 8%;
+	top: -14%;
+	background:url('/img/steam.png') no-repeat;
+	background-size:100px;
+	-webkit-animation:stream 2s ease-out infinite;
+}
+@-webkit-keyframes bg-move{
+	0% { background-position: 100%  -500px}
+	100% {background-position: -3500% -500px}
+}
+
+@-webkit-keyframes boat-float{
+	50% {transform: rotate(-5deg);}
+}
+@-webkit-keyframes stream{
+	100% {transform: translate( -20px, -20px); opacity: .0;}
+}
+@-webkit-keyframes mike{
+	25% {transform:  rotate(8deg)}
+	50% {transform:  rotate(-8deg);}
+	75% {transform: rotate(8deg)}
+}
+@-webkit-keyframes mike-chase{
+	50% {transform: translate(200px) rotate(-8deg)}
+}
+

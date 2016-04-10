@@ -1,0 +1,259 @@
+@charset "UTF-8";
+div.messBox {
+  height: auto;
+  overflow: hidden;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 40px; }
+  div.messBox h3 {
+    font: 18px/52px "微软雅黑", Helvetica, Microsoft YaHei;
+    color: #231815;
+    height: 52px;
+    overflow: hidden;
+    padding: 0 16px 0 24px;
+    border-top: 2px solid #ececec; }
+    div.messBox h3 span {
+      font: 12px/52px "微软雅黑", Helvetica, Microsoft YaHei;
+      color: #7d7d7e;
+      height: 52px;
+      display: inline-block;
+      margin-left: 24px; }
+      div.messBox h3 span a {
+        text-decoration: none;
+        color: #7d7d7e; }
+  div.messBox div.mess {
+    height: auto;
+    overflow: hidden;
+    border-top: 1px solid #d4d5d5;
+    position: relative;
+    padding: 24px 16px 24px 0; }
+    div.messBox div.mess.mess2 .head {
+      width: 110px;
+      padding-left: 15px; }
+    div.messBox div.mess.mess2 div.c {
+      margin-left: 125px; }
+    div.messBox div.mess div.c {
+      margin-left: 74px;
+      height: auto;
+      overflow: hidden; }
+      div.messBox div.mess div.c div.area {
+        height: auto;
+        overflow: hidden;
+        padding: 10px;
+        border: 1px solid #ccc; }
+      div.messBox div.mess div.c textarea {
+        width: 100%;
+        min-height: 100px;
+        background: #f7f7f7;
+        border: 0;
+        color: #222;
+        font: 14px/26px "微软雅黑", Helvetica, Microsoft YaHei;
+        outline: none; }
+      div.messBox div.mess div.c div.sub {
+        text-align: right;
+        margin-top: 8px; }
+        div.messBox div.mess div.c div.sub span {
+          font: 18px/40px "微软雅黑", Helvetica, Microsoft YaHei;
+          color: #9f9e9f;
+          display: inline-block;
+          vertical-align: top; }
+        div.messBox div.mess div.c div.sub a.sub {
+          width: 102px;
+          height: 40px;
+          color: #fff;
+          font: 18px/40px "微软雅黑", Helvetica, Microsoft YaHei;
+          text-align: center;
+          display: inline-block;
+          text-decoration: none;
+          background: #efb81b;
+          vertical-align: top; }
+        div.messBox div.mess div.c div.sub a.clos {
+          width: 102px;
+          height: 38px;
+          color: #595758;
+          font: 18px/40px "微软雅黑", Helvetica, Microsoft YaHei;
+          text-align: center;
+          display: inline-block;
+          text-decoration: none;
+          border: 1px solid #8a8a89;
+          vertical-align: top;
+          margin-left: 10px; }
+      div.messBox div.mess div.c h4 {
+        font: 18px/22px "微软雅黑", Helvetica, Microsoft YaHei;
+        color: #efb91b;
+        height: 22px;
+        overflow: hidden; }
+        div.messBox div.mess div.c h4 a {
+          text-decoration: none;
+          color: #efb91b; }
+        div.messBox div.mess div.c h4 span {
+          color: #8a8a8a; }
+        div.messBox div.mess div.c h4 a {
+          color: #595758;
+          text-decoration: none; }
+      div.messBox div.mess div.c div.s {
+        height: 16px;
+        overflow: hidden;
+        font: 12px/16px "微软雅黑", Helvetica, Microsoft YaHei;
+        color: #7d7d7e;
+        margin-top: 3px; }
+        div.messBox div.mess div.c div.s a {
+          text-decoration: none;
+          color: #7d7d7e; }
+      div.messBox div.mess div.c p {
+        font: 12px/32px "微软雅黑", Helvetica, Microsoft YaHei;
+        color: #7d7d7e;
+        height: auto;
+        overflow: hidden;
+        margin-top: 10px; }
+        div.messBox div.mess div.c p a {
+          text-decoration: none;
+          color: #7d7d7e; }
+      div.messBox div.mess div.c div.b {
+        height: 40px;
+        overflow: hidden;
+        margin-top: 0;
+        border-top: 1px solid #d4d5d5;
+        margin-top: 15px;
+        font: 12px/40px "微软雅黑", Helvetica, Microsoft YaHei;
+        color: #9f9e9f; }
+        div.messBox div.mess div.c div.b a {
+          font: 12px/40px "微软雅黑", Helvetica, Microsoft YaHei;
+          color: #9f9e9f;
+          text-decoration: none;
+          display: inline-block;
+          vertical-align: top; }
+        div.messBox div.mess div.c div.b a.t {
+          padding-left: 25px;
+          background: url("../images/t.jpg") no-repeat left center; }
+        div.messBox div.mess div.c div.b span {
+          height: 40px;
+          overflow: hidden;
+          display: inline-block;
+          float: right; }
+        div.messBox div.mess div.c div.b a.x {
+          padding-left: 25px;
+          background: url("../images/xxx.jpg") no-repeat left center;
+          padding-right: 8px;
+          margin-left: 8px; }
+          div.messBox div.mess div.c div.b a.x.on {
+            background: url("../images/xx.jpg") no-repeat left center; }
+        div.messBox div.mess div.c div.b a.lc {
+          color: #e4b226;
+          text-decoration: none;
+          padding-right: 28px;
+          background: url("../images/car_21.png") no-repeat right center;
+          display: inline-block; }
+        div.messBox div.mess div.c div.b a.z {
+          padding-left: 8px; }
+    div.messBox div.mess div.head {
+      width: 50px;
+      min-height: 40px;
+      padding-left: 24px;
+      position: absolute;
+      left: 0;
+      top: 24px; }
+      div.messBox div.mess div.head span {
+        font: 16px/30px "微软雅黑", Helvetica, Microsoft YaHei;
+        color: #b5b4b5; }
+        div.messBox div.mess div.head span a {
+          text-decoration: none;
+          color: #b5b4b5; }
+      div.messBox div.mess div.head img {
+        width: 40px;
+        height: 40px;
+        vertical-align: top; }
+  div.messBox ul li {
+    height: auto;
+    overflow: hidden; }
+
+@media (max-width: 768px) {
+  div.messBox {
+    margin-top: 2.5rem; }
+    div.messBox h3 {
+      font: 1.125rem/3.25rem "微软雅黑", Helvetica, Microsoft YaHei;
+      height: 3.25rem;
+      padding: 0 1rem 0 1.5rem;
+      border-top: 0.125rem solid #ececec; }
+      div.messBox h3 span {
+        font: 0.75rem/3.25rem "微软雅黑", Helvetica, Microsoft YaHei;
+        color: #7d7d7e;
+        height: 3.25rem;
+        margin-left: 1.5rem; }
+    div.messBox div.mess {
+      height: auto;
+      overflow: hidden;
+      border-top: 0.0625rem solid #d4d5d5;
+      position: relative;
+      padding: 1.5rem 1rem 1.5rem 0; }
+      div.messBox div.mess.mess2 .head {
+        width: 6.875rem;
+        padding-left: 0.9375rem; }
+      div.messBox div.mess.mess2 div.c {
+        margin-left: 7.8125rem; }
+      div.messBox div.mess div.c {
+        margin-left: 4.625rem; }
+        div.messBox div.mess div.c div.area {
+          padding: 0.625rem;
+          border: 0.0625rem solid #ccc; }
+        div.messBox div.mess div.c textarea {
+          min-height: 6.25rem;
+          font: 0.875rem/1.625rem "微软雅黑", Helvetica, Microsoft YaHei;
+          outline: none; }
+        div.messBox div.mess div.c div.sub {
+          text-align: right;
+          margin-top: 0.5rem; }
+          div.messBox div.mess div.c div.sub span {
+            font: 1.125rem/2.5rem "微软雅黑", Helvetica, Microsoft YaHei; }
+          div.messBox div.mess div.c div.sub a.sub {
+            width: 6.375rem;
+            height: 2.5rem;
+            font: 1.125rem/2.5rem "微软雅黑", Helvetica, Microsoft YaHei; }
+          div.messBox div.mess div.c div.sub a.clos {
+            width: 6.375rem;
+            height: 2.375rem;
+            font: 1.125rem/2.5rem "微软雅黑", Helvetica, Microsoft YaHei;
+            margin-left: 0.625rem; }
+        div.messBox div.mess div.c h4 {
+          font: 1.125rem/1.375rem "微软雅黑", Helvetica, Microsoft YaHei;
+          height: auto; }
+        div.messBox div.mess div.c div.s {
+          height: auto;
+          font: 0.75rem/1rem "微软雅黑", Helvetica, Microsoft YaHei;
+          margin-top: 0.1875rem; }
+        div.messBox div.mess div.c p {
+          font: 0.75rem/2rem "微软雅黑", Helvetica, Microsoft YaHei;
+          margin-top: 0.625rem; }
+        div.messBox div.mess div.c div.b {
+          height: 2.5rem;
+          margin-top: 0;
+          border-top: 0.0625rem solid #d4d5d5;
+          margin-top: 0.9375rem;
+          font: 0.75rem/2.5rem "微软雅黑", Helvetica, Microsoft YaHei; }
+          div.messBox div.mess div.c div.b a {
+            font: 0.75rem/2.5rem "微软雅黑", Helvetica, Microsoft YaHei; }
+          div.messBox div.mess div.c div.b a.t {
+            padding-left: 0.625rem;
+            background-size: 0.625rem 0.625rem; }
+          div.messBox div.mess div.c div.b span {
+            height: 2.5rem; }
+          div.messBox div.mess div.c div.b a.x {
+            padding-left: 0.625rem;
+            padding-right: 0.5rem;
+            margin-left: 0.5rem;
+            background-size: 0.625rem 0.625rem; }
+            div.messBox div.mess div.c div.b a.x.on {
+              background-size: 0.625rem 0.625rem; }
+          div.messBox div.mess div.c div.b a.lc {
+            padding-right: 0.9375rem; }
+          div.messBox div.mess div.c div.b a.z {
+            padding-left: 0.5rem; }
+      div.messBox div.mess div.head {
+        width: 3.125rem;
+        min-height: 2.5rem;
+        padding-left: 1.5rem;
+        top: 1.5rem; }
+        div.messBox div.mess div.head img {
+          width: 2.5rem;
+          height: 2.5rem; } }
+

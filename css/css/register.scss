@@ -1,0 +1,168 @@
+@import "_car.scss";
+div.f{
+  max-width: 1000px;
+  height: auto;
+  overflow: hidden;
+  border: 1px solid #ececec;
+  padding: 62px 0;
+  margin: 25px auto 165px;
+}
+div.reg{
+  width: 446px;
+  height: auto;
+  overflow: hidden;
+  margin: 0 auto;
+  ul{
+    height: auto;
+    padding-top: 22px;
+    li{
+      height: 28px;
+      padding-bottom: 22px;
+      position: relative;
+      font:14px/28px $f-yahei;
+      span{
+        color: #595757;
+        width: 92px;
+        height: 28px;
+        padding-left: 12px;
+        display: inline-block;
+        background: url("../images/x.jpg") no-repeat left center;
+      }
+      input{
+        height: 26px;
+        vertical-align: top;
+        border: 1px solid #ececec;
+        color: #595757;
+        padding-left: 8px;
+        width: 326px;
+        font-size: 12px;
+        &.iphon{
+          width: 200px;
+        }
+      }
+      a.shortMess{
+        width: 120px;
+        height: 28px;
+        float: right;
+        overflow: hidden;
+        display: inline-block;
+        text-align: center;
+        background: #fabe00;
+        text-decoration: none;
+        color: #fff;
+        &.no{
+          background: #ccc;
+        }
+      }
+      .fis-mess{
+        display: none;
+        font:12px/18px $f-yahei;
+        color: #f00;
+        height: 18px;
+        overflow: hidden;
+        position: absolute;
+        left: 120px;
+        top: 28px;
+      }
+    }
+  }
+}
+div.b{
+  height: 30px;
+  margin: 0 10px;
+  overflow: hidden;
+  label{
+    padding-left:20px;
+    cursor: pointer;
+    margin: 0 10px;
+    margin-left: 100px;
+    background: url("../images/d2.jpg") no-repeat 3px center;
+    font:12px/28px $f-heiti;
+    color: #9f9e9f;
+    display: inline-block;
+    &.on{
+      background: url("../images/d.jpg") no-repeat 3px center;
+    }
+
+  }
+  a.x{
+    font:12px/28px $f-heiti;
+    color: #fabe00;
+    text-decoration: none;
+    padding-right: 16px;
+  }
+}
+div.loginbtn{
+  height: 40px;
+  overflow: hidden;
+  margin-top: 23px;
+  margin-left: 110px;
+  a{
+    width: 170px;
+    height: 40px;
+    font:18px/40px $f-heiti;
+    color: #fff;
+    background: #eeb81b;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+}
+
+@media (max-width: 768px){
+  div.reg{
+    width: 100%;
+    ul{
+      padding-top:rem(22);
+      li{
+        height: auto;
+        overflow: hidden;
+        padding-bottom:rem(22);
+        font:rem(14)/rem(28) $f-yahei;
+        span{
+          width: calc(100% - 22px);
+          margin-left: rem(10);
+          height: rem(28);
+          padding-left: rem(10);
+        }
+        input{
+          width: calc(100% - 22px);
+          height: rem(26);
+          border: 1px solid #ececec;
+          margin-left: rem(10);
+          font-size: rem(12);
+          &.iphon{
+            width: rem(160);
+          }
+        }
+        a.shortMess{
+          width: rem(120);
+          height: rem(28);
+          margin-right: rem(10);
+        }
+        .fis-mess{
+          font:rem(12)/rem(18) $f-yahei;
+          height: rem(18);
+          position: static;
+        }
+      }
+    }
+  }
+  div.loginbtn{
+    height: 40px;
+    overflow: hidden;
+    margin-top: 23px;
+    margin-left:0;
+    text-align: center;
+    a{
+      width: 170px;
+      height: 40px;
+      font:18px/40px $f-heiti;
+      color: #fff;
+      background: #eeb81b;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+    }
+  }
+}

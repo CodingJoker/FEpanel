@@ -1,0 +1,42 @@
+.table{
+	position: relative;
+	top:50px;
+	width: 100%;
+	border-color: #6C87B2;
+	height: 30px;
+	padding: 0 10px 0 10px;
+	tr{
+		width: 100%;
+		td{
+			width: 33%;
+			padding: 5px;
+			text-align: center;
+			cursor: pointer;
+		}
+	}
+}
+.more-msg{
+	position:absolute;
+	border: 1px solid #97979C;
+	height:20px;
+	min-width:50px;
+	padding: 2px 5px 2px 5px;
+	border-radius:5px;
+	background-color:#97979C;
+	span{
+		display: block;
+		text-align: center;
+		color:#ffffff;
+	}
+}
+.more-msg:after{
+	content:' ';
+		position: relative;
+		top: 10px;
+		left: 30%;
+	   width: 0;
+	   height: 0;
+	   border-top: 10px solid #97979C;
+	   border-right: 10px solid transparent;
+	   border-left: 10px solid transparent;
+}

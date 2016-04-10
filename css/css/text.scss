@@ -1,0 +1,399 @@
+@import "_car.scss";
+div.textBox{
+  max-width: 1000px;
+  height: auto;
+  overflow: hidden;
+  border: 2px solid #ececec;
+  margin: 30px auto 0;
+  div.t{
+    font:12px/38px $f-yahei;
+    color: #595758;
+    @include afont(#595758);
+    height: 38px;
+    overflow: hidden;
+    padding-left: 24px;
+  }
+  h1{
+    font:50px/100px $f-yahei;
+    color: #595758;
+    @include afont(#595758);
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+  }
+  div.textCon{
+    height: auto;
+    overflow: hidden;
+    img{
+      margin: 0 auto;
+      margin-top: 20px;
+      margin-top: 20px;
+      max-width: 100%;
+    }
+    p{
+      font:14px/30px $f-yahei;
+      color: #7d7d7e;
+      @include afont(#7d7d7e);
+      height: auto;
+      overflow: hidden;
+      padding: 10px 12px 0;
+
+    }
+  }
+  div.b{
+    margin-top: 50px;
+    height: auto;
+    padding-left: 5px;
+    a{
+      height: 38px;
+      overflow: hidden;
+      padding: 0 15px;
+      color: #fff;
+      font:18px/38px $f-yahei;
+      display: inline-block;
+      margin: 0 12px;
+      vertical-align: top;
+      text-decoration: none;
+    }
+
+  }
+  div.b2{
+    height: auto;
+    overflow: hidden;
+    span.r{
+      float: right;
+      height: 24px;
+      a{
+        font:12px/24px $f-yahei;
+        color: #7d7d7e;
+        text-decoration: none;
+        padding-left: 24px;
+        margin: 0 12px;
+        height: 24px;
+        display: inline-block;
+        &.p{
+          background: url("../images/pl.jpg") no-repeat left center;
+        }
+        &.x{
+          background: url("../images/xx.jpg") no-repeat left center;
+        }
+        &.t{
+          background: url("../images/t.jpg") no-repeat left center;
+        }
+        &.f{
+          background: url("../images/f.jpg") no-repeat left center;
+        }
+
+      }
+    }
+  }
+}
+
+div.messBox{
+  height: auto;
+  overflow: hidden;
+  width: 100%;
+  margin-top: 40px;
+  h3{
+    font:18px/52px $f-yahei;
+    color: #231815;
+    height: 52px;
+    overflow: hidden;
+    padding: 0 16px 0 24px;
+    span{
+      font:12px/52px $f-yahei;
+      color: #7d7d7e;
+      height: 52px;
+      display: inline-block;
+      margin-left: 24px;
+      @include afont(#7d7d7e);
+    }
+    border-top: 2px solid #ececec;
+  }
+  div.mess{
+    height: auto;
+    overflow: hidden;
+    border-top: 2px solid #ececec;
+    position: relative;
+    padding: 24px 16px 24px 0;
+    div.c{
+      margin-left: 74px;
+      height: auto;
+      overflow: hidden;
+      div.area{
+        height: auto;
+        overflow: hidden;
+        padding: 10px;
+        border: 1px solid #ccc;
+      }
+      textarea{
+        width: 100%;
+        min-height: 100px;
+        background: #f7f7f7;
+        border: 0;
+        color: #222;
+        font:14px/26px $f-yahei;
+        outline: none;
+      }
+      div.sub{
+        text-align: right;
+        margin-top: 8px;
+        span{
+          font:18px/40px $f-yahei;
+          color: #9f9e9f;
+          display: inline-block;
+          vertical-align: top;
+        }
+        a.sub{
+          width: 102px;
+          height: 40px;
+          color: #fff;
+          font:18px/40px $f-yahei;
+          text-align: center;
+          display: inline-block;
+          text-decoration: none;
+          background: #efb81b;
+          vertical-align: top;
+        }
+        a.clos{
+          width: 102px;
+          height: 38px;
+          color: #595758;
+          font:18px/40px $f-yahei;
+          text-align: center;
+          display: inline-block;
+          text-decoration: none;
+          border: 1px solid #8a8a89;
+          vertical-align: top;
+          margin-left: 10px;
+        }
+      }
+      h4{
+        font:18px/22px $f-yahei;
+        color: #efb91b;
+        @include afont(#efb91b);
+        height: 22px;
+        overflow: hidden;
+        span{
+          color: #8a8a8a;
+        }
+        a{
+          color: #595758;
+          text-decoration: none;
+        }
+      }
+      div.s{
+        height: 16px;
+        overflow: hidden;
+        font:12px/16px $f-yahei;
+        color: #7d7d7e;
+        @include afont(#7d7d7e);
+        margin-top: 3px;
+      }
+      p{
+        font:12px/32px $f-yahei;
+        color: #7d7d7e;
+        @include afont(#7d7d7e);
+        height: auto;
+        overflow: hidden;
+        margin-top: 10px;
+      }
+      div.b{
+        height: 40px;
+        overflow: hidden;
+        margin-top: 0;
+        font:12px/40px $f-yahei;
+        color: #9f9e9f;
+        a{
+          font:12px/40px $f-yahei;
+          color: #9f9e9f;
+          text-decoration: none;
+          display: inline-block;
+          vertical-align: top;
+        }
+        a.t{
+          padding-left: 25px;
+          background: url("../images/t.jpg") no-repeat left center;
+        }
+        span{
+          height: 40px;
+          overflow: hidden;
+          display: inline-block;
+          float: right;
+        }
+        a.x{
+          padding-left: 25px;
+          background: url("../images/xxx.jpg") no-repeat left center;
+          padding-right: 8px;
+          margin-left: 8px;
+          &.on{
+            background: url("../images/xx.jpg") no-repeat left center;
+          }
+        }
+        a.z{
+          padding-left: 8px;
+        }
+      }
+    }
+    div.head{
+      width: 50px;
+      min-height: 40px;
+      padding-left: 24px;
+      img{
+        width: 40px;
+        height: 40px;
+        vertical-align: top;
+      }
+      position: absolute;
+      left: 0;
+      top: 24px;
+    }
+  }
+  ul{
+    li{
+      height: auto;
+      overflow: hidden;
+    }
+  }
+}
+
+@media (max-width: 768px){
+  div.textBox{
+    border: rem(2) solid #ececec;
+    margin: rem(30) auto 0;
+    div.t{
+      font:rem(12)/rem(38) $f-yahei;
+      height: rem(38);
+      padding-left:rem(24);
+    }
+    h1{
+      font:rem(24)/rem(48) $f-yahei;
+      padding:0 rem(10);
+      text-align: left;
+    }
+    div.textCon{
+      img{
+        margin: 0 auto;
+        margin-top: rem(20);
+        max-width: 100%;
+      }
+      p{
+        font:rem(14)/rem(30) $f-yahei;
+        padding: rem(10) rem(10) 0;
+      }
+    }
+    div.b{
+      margin-top: rem(50);
+      padding-left: rem(5);
+      a{
+        height: rem(38);
+        padding: 0 rem(15);
+        font:rem(18)/rem(38) $f-yahei;
+        margin: 0 rem(12);
+      }
+    }
+    div.b2{
+      span.r{
+        height: rem(24);
+        a{
+          font:rem(12)/rem(24) $f-yahei;
+          padding-left: rem(24);
+          margin: 0 rem(12);
+          height: rem(24);
+
+        }
+      }
+    }
+  }
+
+  div.messBox{
+    margin-top: rem(40);
+    h3{
+      font: rem(18)/rem(52) $f-yahei;
+      height: rem(52);
+      padding: 0 rem(16) 0 rem(24);
+      span{
+        font:rem(12)/rem(52) $f-yahei;
+        height: rem(52);
+        margin-left: rem(24);
+      }
+      border-top: rem(2) solid #ececec;
+    }
+    div.mess{
+      border-top: rem(2) solid #ececec;
+      padding: rem(24) rem(16) rem(24) 0;
+      div.c{
+        margin-left: rem(74);
+        div.area{
+          padding: rem(10);
+        }
+        textarea{
+          font:rem(14)/rem(26) $f-yahei;
+        }
+        div.sub{
+          margin-top: rem(8);
+          span{
+            font:rem(18)/rem(40) $f-yahei;
+          }
+          a.sub{
+            width: rem(102);
+            height: rem(40);
+            font:rem(18)/rem(40) $f-yahei;
+          }
+          a.clos{
+            width: rem(102);
+            height: rem(38);
+            font:rem(18)/rem(40) $f-yahei;
+            margin-left: rem(10);
+          }
+        }
+        h4{
+          font:rem(18)/rem(22) $f-yahei;
+          height: auto;
+        }
+        div.s{
+          height: auto;
+          font:rem(12)/rem(16) $f-yahei;
+          margin-top: rem(3);
+        }
+        p{
+          font:rem(12)/rem(32) $f-yahei;
+          margin-top: rem(10);
+        }
+        div.b{
+          height: rem(40);
+          font:rem(12)/rem(40) $f-yahei;
+          a{
+            font:rem(12)/rem(40) $f-yahei;
+            margin: 0;
+          }
+          a.t{
+            padding-left: rem(25);
+          }
+          span{
+            height: rem(40);
+          }
+          a.x{
+            padding-left: rem(25);
+            padding-right: rem(8);
+            margin-left: rem(8);
+          }
+          a.z{
+            padding-left: rem(8);
+          }
+        }
+      }
+      div.head{
+        width: rem(50);
+        min-height: rem(40);
+        padding-left: rem(24);
+        img{
+          width: rem(40);
+          height: rem(40);
+        }
+        left: 0;
+        top: rem(24);
+      }
+    }
+  }
+}

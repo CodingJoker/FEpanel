@@ -1,0 +1,406 @@
+@import "_car.scss";
+div.user{
+  height: auto;
+  overflow: hidden;
+  max-width: 1000px;
+  margin: 0 auto;
+  border: 1px solid #e4e4e5;
+  border-top: 0;
+  margin-top: 30px;
+  margin-bottom: 200px;
+  ul{
+    li{
+      min-height: 64px;
+      overflow: hidden;
+      border-top:1px solid #e4e4e5;
+      position: relative;
+
+      span.t{
+        width: 160px;
+        height: 64px;
+        overflow: hidden;
+        display: inline-block;
+        font:18px/64px $f-yahei;
+        color: #595758;
+        position: absolute;
+        left: 16px;
+        top: 0;
+
+      }
+      div.c{
+        min-height: 64px;
+        overflow: hidden;
+        margin-left: 176px;
+        a.b{
+          color: #7d7d7e;
+          text-decoration: none;
+          display: inline-block;
+          height: 64px;
+          overflow: hidden;
+          float: right;
+          padding-right: 14px;
+          margin-right: 15px;
+          background: url("../images/b.jpg") no-repeat right center;
+          position: absolute;
+          right: 0;
+          top: 0;
+
+        }
+        a.sq{
+          color: #7d7d7e;
+          text-decoration: none;
+          display: inline-block;
+          height: 64px;
+          overflow: hidden;
+          float: right;
+          padding-right: 14px;
+          margin-right: 15px;
+          background: url("../images/sq.jpg") no-repeat right center;
+          position: absolute;
+          right: 0;
+          top: 0;
+          display: none;
+        }
+        .w1{
+          font:12px/64px $f-yahei;
+          padding-left: 75px;
+          color: #9e9e9f;
+          height: auto;
+          overflow: hidden;
+          position: relative;
+          padding-right: 60px;
+          img{
+            height: 46px;
+            width:46px;
+            margin-top: 12px;
+            vertical-align: top;
+          }
+        }
+        .w2{
+          font:12px/64px $f-yahei;
+          padding-left: 75px;
+          color: #595758;
+          height: auto;
+          overflow: hidden;
+          position: relative;
+          padding-right: 60px;
+          img{
+            height: 40px;
+            margin-top: 12px;
+            vertical-align: top;
+          }
+        }
+      }
+      div.h{
+        height: auto;
+        overflow: hidden;
+        border-top: 1px solid #e4e4e5;
+        padding-left: 176px;
+        padding-top: 25px;
+        dl{
+          dd{
+            min-height: 30px;
+            padding-bottom: 28px;
+            overflow: hidden;
+            padding-left: 115px;
+            position: relative;
+            span{
+              width: 115px;
+              height: 30px;
+              overflow: hidden;
+              position: absolute;
+              left: 0;
+              top: 0;
+              font:16px/30px $f-yahei;
+              color: #595758;
+            }
+            input{
+              height: 28px;
+              border: 1px solid #e4e4e5;
+              outline: none;
+              width: 360px;
+              font:14px/28px $f-yahei;
+              padding: 0 10px;
+              color: #595758;
+              vertical-align: top;
+            }
+            textarea{
+              width: 380px;
+              min-height: 80px;
+              border: 1px solid #e4e4e5;
+              outline: none;
+              font:16px/28px $f-yahei;
+              color: #595758;
+            }
+            p{
+              width: 380px;
+              height: 30px;
+              font:16px/30px $f-yahei;
+              color: #595758;
+              a{
+                color: #e4b226;
+                text-decoration: none;
+                float: right;
+              }
+            }
+            a.sub{
+              height: 46px;
+              width: 120px;
+              background: #efb81b;
+              font:20px/46px $f-yahei;
+              color: #fff;
+              display: inline-block;
+              text-align: center;
+              text-decoration: none;
+            }
+            div.fx{
+              height: 30px;
+              overflow: hidden;
+              a.fx{
+                padding-left: 18px;
+                height: 30px;
+                text-decoration: none;
+                overflow: hidden;
+                display: inline-block;
+                background: url("../images/d2.jpg") no-repeat left center;
+                font:16px/30px $f-yahei;
+                color: #595758;
+                margin-right: 28px;
+                &.on{
+                  background: url("../images/d.jpg") no-repeat left center;
+                }
+              }
+              a.fm{
+                height: 30px;
+                overflow: hidden;
+                text-decoration: none;
+                display: inline-block;
+                font:16px/30px $f-yahei;
+                color: #595758;
+              }
+            }
+            div.yz{
+              height: 30px;
+              overflow: hidden;
+              width: 380px;
+              font:16px/30px $f-yahei;
+              color: #595758;
+              input{
+                width: 240px;
+              }
+              a.yz{
+                width: 100px;
+                height: 30px;
+                overflow: hidden;
+                display: inline-block;
+                color: #fff;
+                text-align: center;
+                background: #efb81b;
+                text-decoration: none;
+                float: right;
+                &.no{
+                  background: #ccc;
+                }
+              }
+            }
+            select{
+              height: 28px;
+              font:16px/28px $f-yahei;
+              padding: 0 10px;
+              outline: none;
+            }
+          }
+        }
+      }
+      div.pic{
+        height: auto;
+        overflow: hidden;
+        border-top: 1px solid #e4e4e5;
+        padding-left: 176px;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        img{
+          max-width: 200px;
+          margin-right: 30px;
+          float: left;
+        }
+        div.s{
+          width: 200px;
+          height: auto;
+          overflow: hidden;
+          float: left;
+          display: inline-block;
+          a{
+            width: 200px;
+            height: 46px;
+            overflow: hidden;
+            font:16px/46px $f-yahei;
+            display: inline-block;
+            text-align: center;
+            color: #fff;
+            text-decoration: none;
+            background: #efb81b;
+          }
+          p{
+            font:12px/22px $f-yahei;
+            color: #898989;
+            text-align: center;
+            height: auto;
+            overflow: hidden;
+          }
+        }
+      }
+      div.xz{
+        display: none;
+        //height: 0;
+      }
+    }
+  }
+}
+@media (max-width: 768px){
+  div.user{
+    margin-top: rem(30);
+    margin-bottom: rem(100);
+    ul{
+      li{
+        min-height:rem(64);
+        span.t{
+          width: 100%;
+          height:rem(32);
+          font:rem(18)/rem(32) $f-yahei;
+          position: static;
+          text-indent: rem(10);
+        }
+        div.c{
+          min-height: rem(40);
+          overflow: hidden;
+          margin-left:0;
+          a.b{
+            height: rem(40);
+            padding-right: rem(14);
+            margin-right: rem(15);
+          }
+          a.sq{
+            height:rem(40);
+            padding-right: rem(14);
+            margin-right: rem(15);
+          }
+          .w1{
+            font:rem(12)/rem(40) $f-yahei;
+            padding-left: rem(10);
+            padding-right: rem(60);
+            padding-bottom: rem(10);
+            img{
+              height: rem(40);
+              margin-top: rem(12);
+            }
+          }
+          .w2{
+            font:rem(12)/rem(40) $f-yahei;
+            padding-left: rem(10);
+            padding-right: rem(60);
+            img{
+              height: rem(40);
+              margin-top: rem(12);
+            }
+          }
+        }
+        div.h{
+          padding-left:rem(10);
+          padding-top: rem(25);
+          dl{
+            dd{
+              min-height: rem(30);
+              padding-bottom: rem(28);
+              padding-left: 0;
+              span{
+                width:100%;
+                height: rem(30);
+                font:rem(16)/rem(30) $f-yahei;
+                position: static;
+                text-indent: rem(10);
+              }
+              input{
+                height: rem(28);
+                width: rem(180);
+                font: rem(14)/rem(28) $f-yahei;
+                padding: 0 rem(10);
+                border-color: #ccc;
+              }
+              textarea{
+                width: calc(100% - 40px);
+                min-height: rem(80);
+                font: rem(16)/rem(28) $f-yahei;
+                padding: 0 rem(10);
+                border-color: #cccccc;
+              }
+              p{
+                width:100%;
+                height: rem(30);
+                font: rem(16)/rem(30) $f-yahei;
+              }
+              a.sub{
+                height: rem(46);
+                width: rem(120);
+                background: #efb81b;
+                font:rem(20)/rem(46) $f-yahei;
+              }
+              div.fx{
+                height: rem(30);
+                a.fx{
+                  padding-left: rem(18);
+                  height: rem(30);
+                  font: rem(16)/rem(30) $f-yahei;
+                  margin-right: rem(28);
+                }
+                a.fm{
+                  height: rem(30);
+                  font:rem(16)/rem(30) $f-yahei;
+                }
+              }
+              div.yz{
+                height: rem(30);
+                width: 100%;
+                font:rem(16)/rem(30) $f-yahei;
+                input{
+                  width: rem(180);
+                }
+                a.yz{
+                  width: rem(100);
+                  height: rem(30);
+                }
+              }
+              select{
+                height: rem(28);
+                font:rem(16)/rem(28) $f-yahei;
+                padding: 0 rem(10);
+              }
+            }
+          }
+        }
+        div.pic{
+          padding-left: rem(10);
+          padding-top: rem(25);
+          padding-bottom: rem(25);
+          img{
+            max-width: rem(100);
+            margin-left: rem(50);
+            margin-right:0;
+          }
+          div.s{
+            width: rem(200);
+            margin-top: rem(10);
+            a{
+              width: rem(200);
+              height: rem(46);
+              font:rem(16)/rem(46) $f-yahei;
+            }
+            p{
+              font:rem(12)/rem(22) $f-yahei;
+            }
+          }
+        }
+      }
+    }
+  }
+}

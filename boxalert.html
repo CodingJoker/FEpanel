@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>测试Gulp</title>
+</head>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<body>
+	<table class="table">
+		<tr>
+		    <td data-msg='第一列'>第一列</td>
+		    <td data-msg='第二列'>第二列</td>
+		    <td data-msg='第三列'>第三列</td>
+		</tr>
+	</table>
+	
+</body>
+<script type="text/javascript">
+function moreMsg(){
+	var moreMsg = '<div class="more-msg">\
+			<span>你好</span>\
+		</div>';
+	$('body').append(moreMsg);
+	$(".more-msg").hide();
+	$("td").hover(function(){
+		var thisLeft = $(this).offset().left;
+		var thisTop = $(this).offset().top;
+		var thisW = $(this).width();
+		var msg = $(this).data('msg');
+		$(".more-msg span").text(msg);
+		var MsgW = $('.more-msg').width();
+		var MsgH = $('.more-msg').height();
+		$(".more-msg").css({
+			'left':thisLeft+thisW/2-MsgW/2+'px',
+			'top':thisTop - MsgH -10 +'px'
+		})
+		$(".more-msg").show();
+
+	},function(){
+		$('.more-msg').hide();
+	})
+}
+moreMsg();
+</script>
+</html>

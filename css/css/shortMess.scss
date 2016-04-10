@@ -1,0 +1,152 @@
+@import "_car.scss";
+.shortMess{
+  height: auto;
+  overflow: hidden;
+  max-width: 1000px;
+  margin:0 auto;
+}
+h2{
+  height: 65px;
+  overflow: hidden;
+  font:18px/65px $f-yahei;
+  margin-left: 88px;
+  color: #595758;
+  border-bottom: 2px solid #e4e4e5;
+  @include afont(#e4e4e5);
+}
+ul.shortList{
+  height: auto;
+  overflow: hidden;
+  li{
+    overflow: hidden;
+    margin-bottom: 50px;
+    border: 1px solid #efefee;
+    position: relative;
+    min-height: 54px;
+    padding-top: 18px;
+    div.i{
+      width:54px;
+      height: 40px;
+      overflow: hidden;
+      position: absolute;
+      text-align: left;
+      vertical-align: middle;
+      left: 34px;
+      top: 25px;
+      img{
+        width: 40px;
+        height: 40px;
+      }
+    }
+    div.c{
+      height: auto;
+      overflow: hidden;
+      margin-left: 88px;
+      margin-right: 20px;
+      h3{
+        font:22px/32px $f-yahei;
+        color: #4d4948;;
+        a{
+          color: #4d4948;
+          text-decoration: none;
+        }
+        a:hover,a:active{
+          text-decoration: underline;
+        }
+      }
+      p{
+        font: 14px/24px $f-yahei;
+        color: #7c7d7d;
+        a{
+          color: #7c7d7d;
+          text-decoration: none;
+        }
+        a:hover,a:active{
+          text-decoration: underline;
+        }
+        height: auto;
+        overflow: hidden;
+        border-bottom: 1px solid #e2e3e3;
+        padding-bottom: 15px;
+
+      }
+      div.m{
+        height: 32px;
+        overflow: hidden;
+        border-bottom: 2px solid #e2e3e3;
+        font:14px/32px $f-heiti;
+        a.lc{
+          color: #e4b226;
+          text-decoration: none;
+          padding-right: 28px;
+          background:url("../images/car_21.png") no-repeat right center;
+          display: inline-block;
+        }
+        a.tc{
+          color: #9f9e9f;
+          padding-left: 30px;
+          background: url("../images/car_23.png") no-repeat left center;
+          overflow: hidden;
+          display: inline-block;
+          float: right;
+          text-decoration: none;
+          cursor: default;
+          padding-right: 5px;
+        }
+      }
+    }
+  }
+}
+div.navText div.tHeader{
+  color: #585858;
+}
+@media (max-width: 768px){
+  h2{
+    height:auto;
+    font:rem(18)/rem(30) $f-yahei;
+    margin-left: rem(10);
+    border-bottom: rem(2) solid #e4e4e5;
+  }
+  ul.shortList{
+    li{
+      margin-bottom:rem(50);
+      min-height:rem(54);
+      padding-top:rem(18);
+      div.i{
+        width:rem(54);
+        height: rem(40);
+        left: rem(10);
+        top: rem(25);
+        img{
+          width: rem(40);
+          height: rem(40);
+        }
+      }
+      div.c{
+        margin-left:rem(68);
+        margin-right:rem(10);
+        h3{
+          height:auto;
+          font:rem(22)/rem(32) $f-yahei;
+        }
+        p{
+          font: rem(14)/rem(24) $f-yahei;
+          padding-bottom: rem(15);
+
+        }
+        div.m{
+          height: rem(32);
+          border-bottom: rem(2) solid #e2e3e3;
+          font:rem(14)/rem(32) $f-heiti;
+          a.lc{
+            padding-right: rem(10);
+          }
+          a.tc{
+            padding-left: rem(25);
+            padding-right: rem(5);
+          }
+        }
+      }
+    }
+  }
+}

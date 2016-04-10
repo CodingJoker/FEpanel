@@ -1,0 +1,27 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	font-family: 'Raleway Dots', cursive;
+	font-weight: 100;
+	font-size: 20px;
+	background-color: #33495f;
+}
+a{
+	text-decoration:none;
+	display: block;
+	float: left;
+	width: 24%;
+	height: 100px;
+	text-align: center;
+	line-height: 100px;
+	color: #fff;
+	transition: all .5s linear;
+	border-radius: 10px;
+	margin: 1% 1% 0 0;
+}
+a:hover{
+	background-color: #95E9D5;
+	color:#000;
+}

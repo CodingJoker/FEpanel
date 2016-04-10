@@ -1,0 +1,15 @@
+@charset "utf-8"; 
+@mixin col-6{
+  width: 50%;
+  float:left;
+}
+
+@mixin col($width: 50%){
+  width:$width;
+  float: left;
+}
+
+@mixin height-set($height:auto){
+  height: $height;
+  overflow: hidden;
+}

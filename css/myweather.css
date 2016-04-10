@@ -1,0 +1,90 @@
+* {
+	margin:0;
+	padding:0;
+}
+body{
+	background:#33495f;
+}
+.wrapper{
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: calc(50% - 75px);
+  left: calc(50% - 75px);
+}
+.text{
+	position: absolute;
+	bottom: 0px;
+	left: 30%
+}
+.text ul{
+	list-style: none;
+}
+.text ul li{
+	position: absolute;
+	bottom:0px;
+	width: 150px;
+	color:#Fff;
+	font-family: 'Raleway Dots', cursive;
+	font-weight: 100;
+	font-size: 20px;
+	text-align: center;
+	opacity: 0;
+}
+.text ul li:first-child{
+	-webkit-animation:text-show 10.8s 0s linear infinite;
+}
+.text ul li:nth-child(2){
+	-webkit-animation:text-show 10.8s 1.2s linear infinite;
+}
+.text ul li:nth-child(3){
+	-webkit-animation:text-show 10.8s 2.4s linear infinite;
+}
+.text ul li:nth-child(4){
+	-webkit-animation:text-show 10.8s 3.6s linear infinite;
+}
+.text ul li:nth-child(5){
+	-webkit-animation:text-show 10.8s 4.8s linear infinite;
+}
+.text ul li:nth-child(6){
+	-webkit-animation:text-show 10.8s 6.0s linear infinite;
+}
+.text ul li:nth-child(7){
+	-webkit-animation:text-show 10.8s 7.2s linear infinite;
+}
+.text ul li:nth-child(8){
+	-webkit-animation:text-show 10.8s 8.4s linear infinite;
+}
+.text ul li:nth-child(9){
+	-webkit-animation:text-show 10.8s 9.6s linear infinite;
+}
+@-webkit-keyframes text-show{
+	0% { opacity: 0}
+	8% { opacity: 1 }
+	9% { opacity: 1 }
+	10% {opacity: 1}
+	11% {opacity: 1}
+	12% {opacity: 0}
+	100% {opacity: 0}
+}
+
+.sun{
+	position: absolute;
+	left: 64px;
+	top: 32px;
+	width: 80px;
+	height: 80px;
+	background: #f9db62;
+	border-radius:40px;
+	-webkit-animation:sun-down 1.2s ease-out infinite;
+}
+@-webkit-keyframes sundown{
+	0% { 
+		left: 32px;
+		bottom: 32px;
+	 }
+	 4% {
+	 	left: 72px;
+		
+	 }
+}

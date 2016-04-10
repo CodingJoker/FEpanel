@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>RotateCube</title>
+</head>
+<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="css/rotatecube.css">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<body>
+<div class="wraper">
+	<ul class="list">
+		<li class="top">5</li>
+		<li class="front">1</li>
+		<li class="bottom">6</li>
+		<li class="back">2</li>
+		<li class="right">3</li>
+		<li class="left">4</li>
+
+		<li class="on">On</li>
+	</ul>
+</div>
+<div class="wraper1">
+	<ul class="cube on">
+		<li class="front">1</li>
+		<li class="back">2</li>
+		<li class="right">3</li>
+		<li class="left">4</li>
+		<li class="top">5</li>
+		<li class="bottom">6</li>
+	</ul>
+</div>
+</body>
+<script type="text/javascript">
+var cube = $('.cube');
+	$('.list li').hover(function(){
+		var css =  $(this).attr('class');
+		var classes = cube.attr('class').split(' ');
+		for( var i in classes){
+			if(classes[i] != 'cube' && classes[i] != css)
+				cube.removeClass(classes[i]);
+		}
+		cube.addClass(css);
+	})
+	$('.on').click(function(event) {
+		/* Act on the event */
+		$(cube).toggleClass('on')
+	});
+</script>
+</html>

@@ -1,0 +1,162 @@
+@import "_car.scss";
+.header{
+  width: 100%;
+  background: #000;
+  .nav{
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+  }
+}
+.box{
+  height: auto;
+  overflow: hidden;
+  img{
+    vertical-align: top;
+  }
+}
+div.seinc{
+  left: 36px;
+  top: 70px;
+}
+.leftFn{
+  border-color: #d4d5d5;
+  border-top-color: #d4d5d5;
+  top:90px;
+  a{
+    border-color: #d4d5d5;
+    border-top-color: #d4d5d5;
+    &:hover,&:active{
+      border-color: #999;
+    }
+    &.g{
+      background: url("../images/car_06_2.jpg") no-repeat left top;
+      background-size: 100%;
+    }
+    &.f{
+      background: url("../images/car_03_2.jpg")no-repeat left top;
+      background-size: 100%;
+    }
+  }
+}
+div.sein{
+  a.seach{
+    background: #000 url("../images/car_07.png") no-repeat center;
+    background-size: 100%;
+  }
+}
+.ad{
+  height: auto;
+  overflow: hidden;
+  img{
+    vertical-align: top;
+    width: 100%;
+  }
+}
+.bor01{
+  border: 1px solid #efefee;
+}
+.pb28{
+  padding-bottom: 28px;
+}
+.mt15{
+  margin-top: 15px;
+}
+.mt40{
+  margin-top: 40px;
+}
+@media (max-width: 768px){
+  .header{
+    height:rem(50);
+    display: block;
+    .nav{
+      position: fixed;
+      z-index: 99999;
+    }
+  }
+  div.seinc{
+    display: none;
+    width: 100%;
+    height: rem(330);
+    position: absolute;
+    left: 0;
+    top:rem(70);
+    background: #ffffff;
+    z-index: 999999;
+    div.t{
+      height: rem(44);
+      overflow: hidden;
+      background: #f7f7f7;
+      span{
+        font:rem(14)/rem(44) $f-heiti;
+        margin-left: rem(16);
+      }
+      a.clos{
+        width: rem(21);
+        height: rem(21);
+        margin-right: rem(18);
+        margin-top:rem(12);
+      }
+    }
+    ul{
+      li{
+        height: rem(59);
+        border-bottom: rem(1) solid #ededed;
+        div.c{
+          margin-left:rem(55);
+          h4{
+            font:rem(14)/rem(30) $f-yahei;
+            overflow: hidden;
+            text-align: left;
+          }
+          p{
+            font:rem(12)/rem(26) $f-yahei;
+            overflow: hidden;
+            padding-right: rem(16);
+            text-align: left;
+            span{
+              padding-right: rem(26);
+              display: none;
+            }
+          }
+        }
+        div.i{
+          height: rem(45);
+          width: rem(45);
+          position: absolute;
+          left: rem(5);
+          top: rem(7);
+          a{
+            padding: 0;
+            margin: 0;
+          }
+          img{
+            height: rem(45);
+            width: rem(45);
+          }
+        }
+      }
+    }
+    div.b{
+      height: rem(23);
+      margin-top: rem(12);
+      a{
+        width: rem(23);
+        height: rem(23);
+        margin-right: rem(15);
+      }
+    }
+    a.z{
+      width:rem(9);
+      height: rem(6);
+      bottom: rem(-6);
+      left: rem(12);
+    }
+    a.zt{
+      width:rem(9);
+      height: rem(6);
+      bottom: rem(-6);
+      left: rem(12);
+    }
+  }
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>测试</title>
+    <link rel="stylesheet" type="text/css" href="js/jquery-flexslider/flexslider.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-flexslider/jquery.flexslider.js"></script>
+</head>
+<div class="flexslider">
+    <ul class="slides">
+        <li>
+        this
+        </li>
+        <li>
+        that
+        </li>
+        <li>
+        there
+        </li>
+        <li>
+        where
+        </li>
+    </ul>
+</div>
+</section>
+
+<body>
+    <script type="text/javascript">
+    $(window).load(function() {
+        $('.flexslider').flexslider({
+            animation: "slide",
+            slideshowSpeed:1000,
+            directionNav:false
+
+        });
+    });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,958 @@
+@charset "utf-8"; 
+@import "_normalize.scss";
+@import "_mixin.scss","_car.scss";
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}ol,ul{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:"";}abbr,acronym{border:0;}.clearfix:after{visibility:hidden;display:block;font-size:0;content:"";clear:both;height:0;}* html .clearfix{zoom:1;}*:first-child+html .clearfix{zoom:1;}
+html,body{
+  fonts:{
+    size: #{$f}px;
+  }
+}
+@include haiwai_nav();
+@include haiwai_footer();
+strong{
+  font-weight: bold;
+
+}
+.nav{
+      background: #000000;
+}
+.nav,.navsIndex{
+  width: 100%;
+  height: 32px;
+  padding: 19px 0;
+
+  font: 18px/30px $f-heiti;
+  font-weight: bold;
+  color: #efb91b;
+  @include afont(#efb91b);
+  span.box{
+    height: 70px;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: top;
+  }
+  a{
+    padding:0 3px;
+    margin: 0 16px;
+    display:inline-block;
+    vertical-align: top;
+
+  }
+  a:hover,a:active,a.on{
+    border-bottom: 2px solid #efb91b;
+  }
+  a.logo{
+    float: left;
+    width: 235px;
+    padding: 0;
+    margin-right: 36px;
+    margin-left: 0;
+    height: 38px;
+    &:hover,&active{
+      border: 0;
+    }
+  }
+}
+
+div.sein{
+  width: 46px;
+  height: 46px;
+  overflow: hidden;
+  border-right: 0;
+  text-align: left;
+  margin-left: 10px;
+  margin-right: 30px;
+  position: absolute;
+  right: 0;
+  top:50%;
+  margin-top: -23px;
+  z-index: 9999;
+  a.seach{
+    width: 44px;
+    height: 44px;
+    margin: 0;
+    display: inline-block;
+    background: url("../images/car_07.png") no-repeat center;
+    background-size: 100%;
+    padding: 0;
+    vertical-align: top;
+    border: 1px solid #c1c0c0;
+  }
+
+  a.clos{
+    display: none;
+    width: 44px;
+    height: 44px;
+    margin: 0;
+    background: url("../images/car_17.png") no-repeat center;
+ 
+    background-size: 100%;
+    padding: 0;
+    vertical-align: top;
+    border: 1px solid #c1c0c0;
+    cursor: pointer;
+  }
+  input{
+    display: none;
+    border: 1px solid #c1c0c0;
+    width: 820px;
+    padding: 0 20px;
+    background: #fff;
+    outline: none;
+    height: 44px;
+    font:14px/44px $f-yahei;
+    vertical-align: top;
+  }
+}
+div.seinc{
+  display: none;
+  width: 440px;
+  height: 330px;
+  position: absolute;
+  left: 38px;
+  bottom: 80px;
+  background: #ffffff;
+  z-index: 100;
+  div.t{
+    height: 44px;
+    overflow: hidden;
+    background: #f7f7f7;
+    span{
+      font:14px/44px $f-heiti;
+      color: #4d4948;
+      @include afont(#4d4948);
+      margin-left: 16px;
+    }
+    a.clos{
+      width: 21px;
+      height: 21px;
+      overflow: hidden;
+      display: inline-block;
+      background: url("../images/car_20.jpg") no-repeat center;
+      float: right;
+      margin-right: 18px;
+      margin-top: 12px;
+    }
+  }
+  ul{
+    li{
+      height: 59px;
+      border-bottom: 1px solid #ededed;
+      position: relative;
+      div.c{
+        margin-left: 72px;
+        h4{
+          font:14px/30px $f-yahei;
+          color: #4d4948;
+          @include afont(#4d4948);
+        }
+        p{
+          font:12px/26px $f-yahei;
+          color: #7d7d7e;
+          @include afont(#7d7d7e);
+          padding-right: 16px;
+          span{
+            color: #efb91b;
+            float: right;
+            font-family: $f-heiti;
+            @include afont(#efb91b);
+            padding-right: 26px;
+            background: url("../images/car_21.png") no-repeat right center;
+          }
+        }
+      }
+      div.i{
+        height: 45px;
+        width: 45px;
+        position: absolute;
+        left: 15px;
+        top: 7px;
+        img{
+          height: 45px;
+          width: 45px;
+          vertical-align: top;
+        }
+      }
+    }
+  }
+  div.b{
+    height: 23px;
+    overflow: hidden;
+    margin-top: 12px;
+    a{
+      width: 23px;
+      height: 23px;
+      overflow: hidden;
+      display: inline-block;
+      float: right;
+      margin-right: 15px;
+    }
+    a.p{
+      background: url("../images/prev.jpg") no-repeat left center;
+    }
+    a.n{
+      background: url("../images/next.jpg") no-repeat left center;
+    }
+  }
+  a.z{
+    width:9px;
+    height: 6px;
+    overflow: hidden;
+    display: inline-block;
+    background: url("../images/j.png") no-repeat center;
+    position: absolute;
+    bottom: -6px;
+    left: 12px;
+  }
+  a.zt{
+    width:9px;
+    height: 6px;
+    overflow: hidden;
+    display: inline-block;
+    background: url("../images/jt.png") no-repeat center;
+    position: absolute;
+    top: -6px;
+    left: 12px;
+  }
+}
+.banner_l,.leftFn{
+  width: 37px;
+  height: auto;
+  overflow: hidden;
+  position:fixed;
+  left: 50%;
+  top: 75px;
+  margin-left: -600px;
+
+
+  border-top:0;
+  div.box{
+    height: auto;
+    overflow: hidden;
+    display: none;
+  }
+  a{
+    vertical-align: top;
+    display: inline-block;
+    text-decoration: none;
+    outline: none;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #8b8989;
+    &:hover,&:active{
+      border-color: #ccc;
+    }
+    &.g{
+      background:#000 url("../images/car_06.png") no-repeat left top;
+      background-size: 35px 35px;
+    }
+    &.f{
+      background:#000 url("../images/car_03.png")no-repeat left top;
+      background-size: 35px 35px;
+    }
+    &.sina{
+      background:#000 url("../images/sina.png")no-repeat left top;
+      background-size: 35px;
+    }
+    &.qq{
+      background:#000 url("../images/qq.png")no-repeat left top;
+      background-size: 35px;
+    }
+    &.wx{
+      background:#000 url("../images/wx.png")no-repeat left top;
+      background-size: 35px;
+    }
+    &.d{
+      background:#000 url("../images/d.png")no-repeat left top;
+      background-size: 35px;
+    }
+    &.s{
+      background:#000 url("../images/s.png")no-repeat left top;
+      background-size: 35px;
+    }
+  }
+}
+div.goLoad{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-top: 78px;
+  text-align: center;
+  a{
+    width:45px;
+    height: 45px;
+    overflow: hidden;
+    display: inline-block;
+    background: url("../images/car_28.png") no-repeat center;
+    &.z{
+      width: auto;
+      font:14px/45px $f-yahei;
+      background: none;
+      color: #999;
+      text-decoration: none;
+    }
+  }
+}
+div.lmenu{
+  width: 100%;
+  height: 100%;
+  background: url("../images/bg.png");
+  position: fixed;
+  left: 0;
+  top: 0;
+
+
+}
+div.menu{
+  display: none;
+
+  width:200px;
+  height: auto;
+  background: #fff;
+  position: fixed;
+  left: 0;
+  top: 50%;
+  margin-top: -220px;
+  z-index:100000;
+  ul{
+    li{
+      height: auto;
+      overflow: hidden;
+      font: 22px/50px $f-yahei;
+
+      border: 1px solid #d4d3d3;
+      border-top: 0;
+
+      color: #7d7d7e;
+      div.t{
+        padding-left: 30px;
+        background: url("../images/car_19.png") no-repeat 170px center;
+        &:hover,&:active,&.active{
+          background: #eeb81b url("../images/car_19.png") no-repeat 170px center;
+        }
+        &.active{
+          background: #eeb81b url("../images/car_19_1.png") no-repeat 170px center;
+        }
+      }
+      @include afont(#7d7d7e);
+      dl{
+        display: none;
+        height: 0;
+        dd{
+          height: 48px;
+          overflow: hidden;
+          padding-left: 30px;
+          border-bottom: 1px solid #e4e5e5;
+          font:18px/36px $f-yahei;
+          color: #8a8a8a;
+          @include afont(#8a8a8a);
+          background:#c9cac9 url("../images/car_19.png") no-repeat 170px center;
+          &.active{
+            color: #4c4948;
+          }
+          &.b{
+            border-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+  a.clos{
+    width: 43px;
+    height: 43px;
+    overflow: hidden;
+    position: absolute;
+    right: -45px;
+    top: 0;
+    background: url("../images/car_17.png") no-repeat center;
+    background-size: 100%;
+      background-color:black;
+    border: 1px solid #898b8e;
+    &:hover,&:active{
+      border-color: #dcdddd;
+    }
+     
+  }
+  a.f{
+    width: 43px;
+    height: 43px;
+    overflow: hidden;
+    position: absolute;
+    right: -45px;
+    top: 44px;
+    background: url("../images/car_03.png") no-repeat center;
+    background-size: 100%;
+    border: 1px solid #8b8989;
+  }
+}
+div.login{
+  display: none;
+  width: 346px;
+  height: auto;
+  overflow: hidden;
+  background: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -173px;
+  margin-top: -150px;
+  padding-bottom: 15px;
+  div.t{
+    height: 44px;
+    overflow: hidden;
+    background: #f7f7f7;
+    a.clos{
+      width: 21px;
+      height: 21px;
+      overflow: hidden;
+      display: inline-block;
+      background: url("../images/car_20.jpg") no-repeat center;
+      float: right;
+      margin-right: 18px;
+      margin-top: 12px;
+
+    }
+
+  }
+  div.fm{
+    height: auto;
+    overflow: hidden;
+
+    ul{
+      height: auto;
+      overflow: hidden;
+      margin-top: 10px;
+      li{
+        height: 43px;
+        overflow: hidden;
+        border-bottom: 1px solid #e8e6e7;
+        margin: 0 10px;
+        padding-left: 40px;
+        &.u{
+          background: url("../images/user.jpg") no-repeat 9px center;
+        }
+        &.p{
+          background: url("../images/suo.jpg") no-repeat 9px center;
+        }
+        input{
+          width: 100%;
+          height: 43px;
+          overflow: hidden;
+          outline: none;
+          font:14px/43px $f-yahei;
+          color: #000;
+          border: 0;
+        }
+      }
+    }
+    div.b{
+      height: 30px;
+      margin: 0 10px;
+      overflow: hidden;
+      label{
+        padding-left:30px;
+        cursor: pointer;
+        margin: 0 10px;
+        background: url("../images/d2.jpg") no-repeat 3px center;
+        font:12px/28px $f-heiti;
+        color: #9f9e9f;
+        display: inline-block;
+        &.on{
+          background: url("../images/d.jpg") no-repeat 3px center;
+        }
+
+      }
+      a.w{
+        font:12px/28px $f-heiti;
+        color: #595758;
+        text-decoration: none;
+        float: right;
+        padding-right: 16px;
+        background: url("../images/r.jpg") no-repeat right center;
+      }
+    }
+    div.loginbtn{
+      height: 46px;
+      overflow: hidden;
+      text-align: center;
+      margin-top: 23px;
+      a{
+        width: 90%;
+        height: 46px;
+        font:12px/46px $f-heiti;
+        color: #fff;
+        background: #eeb81b;
+        text-align: center;
+        display: inline-block;
+
+      }
+    }
+    p.z{
+      height: 30px;
+      overflow: hidden;
+      font:12px/30px $f-heiti;
+      padding: 0 5%;
+      color: #9f9e9f;
+      a{
+        color: #595758;
+        text-decoration: none;
+        margin-left: 3px;
+        padding-right: 13px;
+        background: url("../images/r.jpg") no-repeat right center;
+      }
+    }
+  }
+  p.error{
+    height: 24px;
+    overflow: hidden;
+    font:12px/24px $f-heiti;
+    padding: 0 5%;
+    color: #9f9e9f;
+  }
+}
+div.er{
+  height: 310px;
+  width: 267px;
+  display: none;
+  overflow: hidden;
+  position: fixed;
+  left: 50%;
+  top: 138px;
+  margin-left: -346px;
+  padding-left: 24px;
+  background:url("../images/bg.png");
+  z-index: 1000;
+  ul{
+    li{
+      width: 198px;
+      height:auto;
+      overflow: hidden;
+      margin: 36px 13px 0;
+      float: left;
+      p{
+        height: 68px;
+        overflow: hidden;
+        font: 22px/68px $f-yahei;
+        color: #fff;
+        @include afont(#fff);
+        text-align: center;
+        vertical-align: top;
+      }
+    }
+  }
+}
+div.navuser{
+  height: 46px;
+  position: absolute;
+  top: 50%;
+  right: 76px;
+  margin-top: -23px;
+  a.user{
+    width: 44px;
+    height: 44px;
+    padding: 0px;
+    overflow: hidden;
+    display: inline-block;
+    background: url("../images/car_04.png") no-repeat center;
+    background-size: 100%;
+    border: 1px solid #fff;
+    vertical-align: top;
+    margin: 0;
+  }
+  span.name{
+    cursor: pointer;
+    display: inline-block;
+    width: 119px;
+    height: 44px;
+    overflow: hidden;
+    outline: none;
+    border: 1px solid #fff;
+    border-left: 0;
+    border-right: 0;
+    font:14px/44px $f-yahei;
+    text-align: center;
+    color: #fff;
+    vertical-align: top;
+    background: none;
+  }
+  dl{
+    height: auto;
+    width: 100%;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    position: absolute;
+    left: 0;
+    top: 46px;
+    z-index: 9999;
+    display: none;
+
+    dd{
+      font:18px/46px $f-yahei;
+      color: #efb91b;
+      height: 46px;
+      overflow: hidden;
+      text-align: center;
+      border-bottom: 1px solid #aaaaaa;
+      background: #000000;
+
+      &:hover,&:active{
+        background: #fabe00;
+        color: #a19478;
+        a{
+          color: #a19478;
+        }
+      }
+      a{
+        color: #efb91b;
+        text-decoration: none;
+      }
+    }
+  }
+}
+div.navBranch{
+  width: 100%;
+  height: 0;
+  display: none;
+  overflow: hidden;
+  background: #dcdddd;
+  div.box{
+    max-width: 1000px;
+    height: 46px;
+    padding-top: 12px;
+    overflow: hidden;
+    margin: 0 auto;
+    color:#595758;
+    font:18px/32px $f-yahei;
+    @include afont(#595758);
+    a{
+      margin: 0 20px;
+      padding: 0 3px;
+      display: inline-block;
+      border-bottom: 3px solid #dcdddd;
+      &:hover,&:active,&.on{
+        border-bottom: 3px solid #595858;
+      }
+    }
+  }
+}
+.footer{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background: #040000;
+  margin-top: 78px;
+  border-top: 1px solid #b1b0b0;
+  padding: 38px 0 60px 0;
+  p.a{
+    color: #dbdcdc;
+    font:14px/24px $f-heiti;
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+    @include afont(#dbdcdc);
+    margin-bottom: 20px;
+    a{
+      padding: 0 22px;
+    }
+  }
+  p.b{
+    font:12px/18px $f-heiti;
+    color: #b5b4b5;
+    text-align: center;
+    @include afont(#b5b4b5);
+
+  }
+}
+div.navText{
+  width: 100%;
+  height: 58px;
+  overflow: hidden;
+  background: #dcdddd;
+  div.tHeader{
+    height: auto;
+    overflow: hidden;
+    max-width: 980px;
+    margin: 0 auto;
+    font:18px/58px $f-yahei;
+    padding-left: 20px;
+    @include afont(#595758);
+    a:hover,a:active{
+      text-decoration: underline;
+    }
+    color: #231815;
+  }
+}
+
+.swichHead{
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 58px;
+  overflow: hidden;
+  background: #dcdddd;
+  font:18px/58px $f-yahei;
+  font-weight: bold;
+  color: #585858;
+  a{
+    color: #585858;
+    text-decoration: none;
+    line-height: 30px;
+    height: 30px;
+    margin-top: 12px;
+    display: inline-block;
+    vertical-align: top;
+    border-bottom: 3px solid #dcdddd;
+    margin-right: 30px;
+    padding: 0 5px;
+    &.on,&:hover,&:active{
+      border-bottom: 3px solid #231815;
+    }
+  }
+}
+
+.goTop{
+  width: 46px;
+  height:46px;
+  overflow: hidden;
+  display: block;
+  background: url("../images/goTop.jpg") no-repeat center;
+  position: fixed;
+  bottom: 300px;
+  cursor: pointer;
+  right: 50%;
+  margin-right: -600px;
+
+}
+
+.ns-header-menu{
+  display: none;
+}
+.bgBox{
+  display: none;
+}
+@media (max-width: 768px){
+  .nav,.navsIndex{
+    width: 100%;
+    height: rem(30);
+    text-align: center;
+    padding: rem(10) 0;
+    position: fixed;
+    left:0;
+    top:0;
+    a.logo{
+      width: auto;
+      height: rem(30);
+      float: none;
+      overflow: hidden;
+      margin-left: rem(-30);
+      margin-right: 0;
+      img{
+        height: rem(30);
+      }
+    }
+    span.box{
+      display: none;
+      position: absolute;
+      left: 0;
+      top: rem(50);
+      width: 100%;
+      height: auto;
+      background: #fff;
+      z-index: 999999;
+      a{
+        width: 100%;
+        height: rem(32);
+        overflow: hidden;
+        display: block;
+        padding: 0;
+        margin: 0;
+        color: #7d7d7e;
+        border-bottom: 1px solid #c9caca;
+        background: url("../images/car_19.png") no-repeat calc(100% - 10px) center;
+        background-size: rem(8);
+        &:hover,&:active{
+          background: #fabe00;
+          color: #7d7d7e;
+        }
+        &:last-child{
+          border-bottom: 0;
+        }
+      }
+    }
+    div.navuser{
+      display: none;
+    }
+  }
+  div.sein{
+    width: rem(46);
+    height: rem(46);
+    overflow: hidden;
+    border-right: 0;
+    text-align: left;
+    position: absolute;
+    margin: 0;
+    right: 0;
+    top:50%;
+    margin-top: -23px;
+    z-index: 9999;
+    a.seach{
+      width:rem(44);
+      height:rem(44);
+      margin: 0;
+      display: inline-block;
+      background: url("../images/car_07.png") no-repeat center;
+      background-size: 100%;
+      padding: 0;
+      vertical-align: top;
+      border: 0;
+    }
+    a.clos{
+      display: none;
+      width:rem(44);
+      height:rem(44);
+      margin: 0;
+      background: url("../images/car_17.png") no-repeat center;
+      background-size: 100%;
+      padding: 0;
+      vertical-align: top;
+      cursor: pointer;
+      border: 0;
+    }
+    input{
+      display: none;
+      border: 1px solid #c1c0c0;
+      width: calc(100% - 140px);
+      background: #fff;
+      outline: none;
+      height: 44px;
+      font:14px/44px $f-yahei;
+      vertical-align: top;
+    }
+  }
+  .ns-header-menu{
+    display: inline-block;
+    width: rem(32);
+    height: rem(32);
+    float: left;
+    margin-left: rem(10);
+  }
+  .bgBox{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    left: 0;
+    top: rem(50);
+  }
+  div.seinc{
+    display: none;
+    width: 100%;
+    height: 330px;
+    position: absolute;
+    left: 0;
+    top:rem(70);
+    background: #ffffff;
+    z-index: 100;
+    div.t{
+      height: 44px;
+      overflow: hidden;
+      background: #f7f7f7;
+      span{
+        font:14px/44px $f-heiti;
+        color: #4d4948;
+        @include afont(#4d4948);
+        margin-left: 16px;
+      }
+      a.clos{
+        width: 21px;
+        height: 21px;
+        overflow: hidden;
+        display: inline-block;
+        background: url("../images/car_20.jpg") no-repeat center;
+        float: right;
+        margin-right: 18px;
+        margin-top: 12px;
+      }
+    }
+    ul{
+      li{
+        height: 59px;
+        border-bottom: 1px solid #ededed;
+        position: relative;
+        div.c{
+          margin-left: 72px;
+          h4{
+            font:14px/30px $f-yahei;
+            color: #4d4948;
+            @include afont(#4d4948);
+          }
+          p{
+            font:12px/26px $f-yahei;
+            color: #7d7d7e;
+            @include afont(#7d7d7e);
+            padding-right: 16px;
+            span{
+              color: #efb91b;
+              float: right;
+              font-family: $f-heiti;
+              @include afont(#efb91b);
+              padding-right: 26px;
+              background: url("../images/car_21.png") no-repeat right center;
+            }
+          }
+        }
+        div.i{
+          height: 45px;
+          width: 45px;
+          position: absolute;
+          left: 15px;
+          top: 7px;
+          img{
+            height: 45px;
+            width: 45px;
+            vertical-align: top;
+          }
+        }
+      }
+    }
+    div.b{
+      height: 23px;
+      overflow: hidden;
+      margin-top: 12px;
+      a{
+        width: 23px;
+        height: 23px;
+        overflow: hidden;
+        display: inline-block;
+        float: right;
+        margin-right: 15px;
+      }
+      a.p{
+        background: url("../images/prev.jpg") no-repeat left center;
+      }
+      a.n{
+        background: url("../images/next.jpg") no-repeat left center;
+      }
+    }
+    a.z{
+      width:9px;
+      height: 6px;
+      overflow: hidden;
+      display: inline-block;
+      background: url("../images/j.png") no-repeat center;
+      position: absolute;
+      bottom: -6px;
+      left: 12px;
+    }
+    a.zt{
+      width:9px;
+      height: 6px;
+      overflow: hidden;
+      display: inline-block;
+      background: url("../images/jt.png") no-repeat center;
+      position: absolute;
+      top: -6px;
+      left: 12px;
+    }
+  }
+}

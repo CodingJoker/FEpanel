@@ -1,0 +1,133 @@
+@charset "UTF-8";
+.header {
+  width: 100%;
+  background: #000; }
+  .header .nav {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative; }
+
+.box {
+  height: auto;
+  overflow: hidden; }
+  .box img {
+    vertical-align: top; }
+
+div.seinc {
+  left: 36px;
+  top: 70px; }
+
+.leftFn {
+  border-color: #d4d5d5;
+  border-top-color: #d4d5d5;
+  top: 90px; }
+  .leftFn a {
+    border-color: #d4d5d5;
+    border-top-color: #d4d5d5; }
+    .leftFn a:hover, .leftFn a:active {
+      border-color: #999; }
+    .leftFn a.g {
+      background: url("../images/car_06_2.jpg") no-repeat left top;
+      background-size: 100%; }
+    .leftFn a.f {
+      background: url("../images/car_03_2.jpg") no-repeat left top;
+      background-size: 100%; }
+
+div.sein a.seach {
+  background: #000 url("../images/car_07.png") no-repeat center;
+  background-size: 100%; }
+
+.ad {
+  height: auto;
+  overflow: hidden; }
+  .ad img {
+    vertical-align: top;
+    width: 100%; }
+
+.bor01 {
+  border: 1px solid #efefee; }
+
+.pb28 {
+  padding-bottom: 28px; }
+
+.mt15 {
+  margin-top: 15px; }
+
+.mt40 {
+  margin-top: 40px; }
+
+@media (max-width: 768px) {
+  .header {
+    height: 3.125rem;
+    display: block; }
+    .header .nav {
+      position: fixed;
+      z-index: 99999; }
+  div.seinc {
+    display: none;
+    width: 100%;
+    height: 20.625rem;
+    position: absolute;
+    left: 0;
+    top: 4.375rem;
+    background: #ffffff;
+    z-index: 999999; }
+    div.seinc div.t {
+      height: 2.75rem;
+      overflow: hidden;
+      background: #f7f7f7; }
+      div.seinc div.t span {
+        font: 0.875rem/2.75rem SimHei, Helvetica, Arial, Verdana, sans-serif;
+        margin-left: 1rem; }
+      div.seinc div.t a.clos {
+        width: 1.3125rem;
+        height: 1.3125rem;
+        margin-right: 1.125rem;
+        margin-top: 0.75rem; }
+    div.seinc ul li {
+      height: 3.6875rem;
+      border-bottom: 0.0625rem solid #ededed; }
+      div.seinc ul li div.c {
+        margin-left: 3.4375rem; }
+        div.seinc ul li div.c h4 {
+          font: 0.875rem/1.875rem "微软雅黑", Helvetica, Microsoft YaHei;
+          overflow: hidden;
+          text-align: left; }
+        div.seinc ul li div.c p {
+          font: 0.75rem/1.625rem "微软雅黑", Helvetica, Microsoft YaHei;
+          overflow: hidden;
+          padding-right: 1rem;
+          text-align: left; }
+          div.seinc ul li div.c p span {
+            padding-right: 1.625rem;
+            display: none; }
+      div.seinc ul li div.i {
+        height: 2.8125rem;
+        width: 2.8125rem;
+        position: absolute;
+        left: 0.3125rem;
+        top: 0.4375rem; }
+        div.seinc ul li div.i a {
+          padding: 0;
+          margin: 0; }
+        div.seinc ul li div.i img {
+          height: 2.8125rem;
+          width: 2.8125rem; }
+    div.seinc div.b {
+      height: 1.4375rem;
+      margin-top: 0.75rem; }
+      div.seinc div.b a {
+        width: 1.4375rem;
+        height: 1.4375rem;
+        margin-right: 0.9375rem; }
+    div.seinc a.z {
+      width: 0.5625rem;
+      height: 0.375rem;
+      bottom: -0.375rem;
+      left: 0.75rem; }
+    div.seinc a.zt {
+      width: 0.5625rem;
+      height: 0.375rem;
+      bottom: -0.375rem;
+      left: 0.75rem; } }
+
