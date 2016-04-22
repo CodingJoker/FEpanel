@@ -1,0 +1,211 @@
+
+.wraper2 .loading-circle{
+	list-style: none;
+	position: absolute;
+	left: 50%;
+	width: 100px;
+	height: 100px;
+	/*border:1px solid #000;*/
+}
+.loading-circle li{
+	position: absolute;
+	left: 0; 
+	top: 10%;
+ 	width: 15%;
+	height: 30%; 
+	display: inline-block;
+	padding: 0;
+	transform-origin: 150% 150%;
+}
+.loading-circle li::after{
+	content:' ';
+	display: block;
+	position: absolute;
+	width: 100%;
+	height:100%;
+
+	background-color:#fff;
+}
+@for $i from 1 through 12{
+	.loading-circle li:nth-child(#{$i}){
+		transform: rotate($i * 30deg);
+		-webkit-animation: gear-#{$i} 3s linear infinite;
+	}
+	@-webkit-keyframes gear-#{$i}{
+		100% {transform:rotate(330deg + $i * 30deg)}
+	}
+}
+
+// 风车
+
+.wraper2 .loading-windmills{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 200px;
+	height:200px;
+	list-style: none;
+}
+.loading-windmills > li:not(:nth-child(n+5)){
+	position:absolute;
+	height: 150px;
+	border-left:2px solid #919092;
+	transform-origin:0% 0%;
+	z-index:999;
+}
+.loading-windmills > li:not(:nth-child(n+5))::after{
+	content: ' ';
+	display: block;
+	position:absolute;
+	top:-150px;
+	left: -2px;
+	width: 50px;
+	height: 50px;
+	background-color:#51DDDC;
+	padding:0;
+	margin:0;
+	border:0;
+}
+.loading-windmills > .body{
+	position:absolute;
+	z-index:10;
+	left:-85px;
+	height:0px;
+	width: 50px;
+	border-left:100px solid transparent;
+	border-right:100px solid transparent;
+	border-bottom:200px solid #fff;
+}
+.loading-windmills >.body::after{
+	content:' ';
+	width: 0;
+	height:0;
+}
+@for $i from 0 through 3{
+	.loading-windmills > li:nth-child(#{$i + 1}){
+		transform: rotate($i * 90deg);
+		-webkit-animation: wind-fly-#{$i + 1} 3s linear infinite;
+	}
+	@-webkit-keyframes wind-fly-#{$i + 1}{
+		100% {transform:rotate(360deg + $i * 90deg)}
+	}
+}
+// .loading-windmills  > .window{
+// 	position:absolute;
+// 	top:40px;
+// 	left: 5px;
+// 	// background-color:#33495f;
+// 	background-color:#fff;
+// 	width: 30px;
+// 	height:30px;
+// 	border-left:20px solid #33495f;
+// 	border-right:20px solid #33495f;
+// 	border-bottom:20px solid transparent;
+// 	border-top:20px solid transparent;
+// 	z-index:90;
+// }
+.loading-windmills > .window{
+	position:absolute;
+	top: 40px;
+	left: 20px;
+	background-color:#33495f;
+	width: 35px;
+	height:35px;
+	border-radius:50%;
+	z-index:999;
+}
+.loading-windmills > .window::before{
+	content:' ';
+	display:block;
+	width: 35px;
+	border-bottom:2px solid #fff;
+	position: absolute;
+	top:17px;
+}
+.loading-windmills > .window::after{
+	content:' ';
+	display:block;
+	height: 35px;
+	border-left:2px solid #fff;
+	position: absolute;
+	left: 17px;
+}
+.loading-windmills  > .door{
+	position:absolute;
+	bottom:0;
+	left:20px;
+	width: 30px;
+	height:50px;
+	background-color:#33495f;
+	border:none;
+	z-index:90;
+}
+//
+.wraper2 .loading-circle2{
+	list-style: none;
+	position: absolute;
+	left: 70%;
+	top: 3%;
+	width: 100px;
+	height: 100px;
+	padding:0;
+	margin:0;
+	/*border:1px solid #000;*/
+}
+.loading-circle2 li{
+	position: absolute;
+	left: 0;
+	top: 10%;
+ 	width:15%;
+	height: 15%; 
+	display: inline-block;
+	padding: 0;
+	transform-origin: 200% 300%;
+}
+.loading-circle2 li::after{
+	content:' ';
+	display: block;
+	position: absolute;
+	width: 100%;
+	height:100%;
+	border-radius:50%;
+	background-color:#fff;
+}
+@for $i from 1 through 12{
+	.loading-circle2 li:nth-child(#{$i}){
+		transform: rotate($i * 30deg);
+	}
+
+	.loading-circle2 li:nth-child(#{$i})::after{
+		transform :scale(0,0);
+		-webkit-animation: SH-circle-#{$i} 1.5s -0.125s+0.125s*$i linear infinite
+	}
+	@-webkit-keyframes SH-circle-#{$i} {
+		25% {transform:scale(1,1)}
+		50% , 100% {transform:scale(0,0)}
+	}
+}
+.wraper2 .loading-rect{
+	position: absolute;
+	top: 30%;
+	left: 10%;
+	width: 100px;
+	height: 100px;
+	list-style: none;
+}
+.wraper2 .loading-rect li{
+	float: left;
+	margin-left: 5px;
+	width: 8px;
+	height: 30px;
+	background-color: #fff;
+}
+@for $i from 1 through 5{
+	.wraper2 .loading-rect li:nth-child(#{$i}){
+		-webkit-animation: rect-scale 1s $i*0.2s linear infinite;
+	}
+}
+@-webkit-keyframes rect-scale{
+	20% {-webkit-transform: scale(1,1.8)}
+	40%,100% {-webkit-transform: scale(1,1)}
+}
