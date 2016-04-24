@@ -1,7 +1,8 @@
 body {
   background: #33495f;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  font-family: 'Raleway Dots', cursive; }
 
 * {
   margin: 0;
@@ -66,3 +67,152 @@ body {
 
 .panorama:hover {
   animation-play-state: running; }
+
+.rotate .process {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 10px;
+  border-radius: 5px;
+  margin: 0 auto;
+  color: #fff;
+  width: 80%;
+  height: 15px;
+  background-color: #ccc; }
+  .rotate .process .process-bar {
+    display: inline-block;
+    vertical-align: top;
+    width: 2%;
+    height: 15px;
+    background-color: #DE5656;
+    margin-right: 10px;
+    border-radius: 5px 0 0 5px; }
+  .rotate .process .process-text {
+    display: inline-block;
+    position: absolute;
+    left: 2px;
+    color: #fff;
+    font-size: 10px;
+    vertical-align: top;
+    height: 15px;
+    line-height: 15px; }
+
+.rotate .rotate-box {
+  display: inline-block;
+  width: 50%;
+  height: 80%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  opacity: 0;
+  font-size: 22px;
+  color: #fff;
+  text-align: center;
+  -webkit-transform-style: preserve-3d;
+  transition: all 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  transform-origin: 50% 50%  -200px; }
+  .rotate .rotate-box.to-left {
+    transform: rotateY(-120deg); }
+  .rotate .rotate-box.to-right {
+    transform: rotateY(120deg); }
+  .rotate .rotate-box.view-box {
+    opacity: 1; }
+  .rotate .rotate-box.clear-center {
+    text-align: start; }
+  .rotate .rotate-box .step {
+    width: 100%;
+    opacity: 0;
+    margin-top: 7px;
+    transition: all 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
+    .rotate .rotate-box .step.view-step {
+      margin-top: 0px;
+      opacity: 1; }
+    .rotate .rotate-box .step div {
+      margin-top: 10px; }
+    .rotate .rotate-box .step .self-bc {
+      width: 200px;
+      height: 200px;
+      border-radius: 100px;
+      background-color: #fff;
+      background: url(../img/myself.JPG) no-repeat -50px -100px;
+      margin: auto;
+      background-size: 300px; }
+    .rotate .rotate-box .step .location span {
+      display: inline-block;
+      vertical-align: middle; }
+    .rotate .rotate-box .step .location .location-bc {
+      width: 30px;
+      height: 30px;
+      background: url(../img/location.png) no-repeat;
+      background-size: 30px; }
+    .rotate .rotate-box .step .location .name {
+      vertical-align: bottom;
+      margin-left: 40px; }
+    .rotate .rotate-box .step .position {
+      opacity: 0;
+      margin-top: 30px;
+      animation: fadeIn 0.8s cubic-bezier(0.26, 0.86, 0.44, 0.985) forwards; }
+    .rotate .rotate-box .step .other {
+      opacity: 0;
+      margin-top: 30px;
+      animation: fadeIn 0.8s 0.6s cubic-bezier(0.26, 0.86, 0.44, 0.985) forwards; }
+    .rotate .rotate-box .step .contact {
+      margin-top: 20px; }
+      .rotate .rotate-box .step .contact div {
+        opacity: 0;
+        margin-top: 30px;
+        animation: fadeIn 0.8s 1s cubic-bezier(0.26, 0.86, 0.44, 0.985) forwards; }
+        .rotate .rotate-box .step .contact div span {
+          display: inline-block; }
+          .rotate .rotate-box .step .contact div span.title {
+            text-align: right;
+            width: 100px;
+            margin-right: 15px; }
+          .rotate .rotate-box .step .contact div span.body {
+            width: 250px;
+            text-align: left; }
+    .rotate .rotate-box .step .qrcode {
+      margin-top: 20px; }
+      .rotate .rotate-box .step .qrcode div {
+        display: inline-block;
+        width: 200px;
+        box-sizing: border-box;
+        height: 200px; }
+        .rotate .rotate-box .step .qrcode div.wechat {
+          opacity: 0;
+          margin-top: 30px;
+          animation: fadeIn 0.8s 1.2s cubic-bezier(0.26, 0.86, 0.44, 0.985) forwards;
+          background: url(../img/wechat.png) no-repeat;
+          background-size: 200px;
+          margin-right: 20px; }
+        .rotate .rotate-box .step .qrcode div.qq {
+          opacity: 0;
+          margin-top: 30px;
+          animation: fadeIn 0.8s 1.2s cubic-bezier(0.26, 0.86, 0.44, 0.985) forwards;
+          background: url(../img/qq.png) no-repeat;
+          background-size: 200px; }
+    .rotate .rotate-box .step .warrer {
+      opacity: 0;
+      margin-top: 50px; }
+    .rotate .rotate-box .step .project .head span {
+      display: inline-block; }
+      .rotate .rotate-box .step .project .head span.time {
+        width: 200px; }
+      .rotate .rotate-box .step .project .head span.company {
+        width: 300px; }
+      .rotate .rotate-box .step .project .head span.company-logo {
+        width: 100px; }
+    .rotate .rotate-box .step .project .body ol {
+      display: inline-block;
+      margin-left: 21px; }
+
+@keyframes fadeIn {
+  0 {
+    margin-top: 30px; }
+  100% {
+    opacity: 1;
+    margin-top: 10px; } }
