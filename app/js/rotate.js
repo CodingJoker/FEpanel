@@ -1,29 +1,17 @@
-;(function(){
-	$("body").keydown(function(e){
-		var viewBox = $(".view-box");
-		if(e.keyCode == 37){
-			//向左
-			var nowStep = viewBox.find('.js-step-now');
-			if(nowStep.prev().hasClass('step')){
-				nowStep.removeClass('js-step-now').removeClass('view-step').prev().addClass('js-step-now');
-			}else{
-				if(viewBox.prev().hasClass('rotate-box')){
-					viewBox.addClass('to-right').removeClass('view-box');
-					viewBox.prev().addClass('view-box').removeClass('to-left');
-				}
-			}
-			
-		}else if(e.keyCode == 39){
-				var nowStep = viewBox.find('.js-step-now');
-				if(nowStep.next().hasClass('step')){
-					nowStep.removeClass('js-step-now').next().addClass('view-step').addClass('js-step-now');
-				}else{
-					if(viewBox.next().hasClass('rotate-box')){
-					viewBox.addClass('to-left').removeClass('view-box');
-					viewBox.next().addClass('view-box').removeClass('to-right');
-					}
-				}
-
-		}
-	})
-}())
+// var ball = $(".ball");
+// // ball.mouseover(function(event) {
+// // 	/* Act on the event */
+// // 	$(this).find('.row').css("transform-origin","50% 50%  -200px");
+// // 	console.log('enter');
+// // });
+// ball.hover(function(){
+// 	$(this).find('.row').css({
+// 		"transform-origin":"50% 50%  -200px",
+// 		"animation-duration":"5s"
+// 	});
+// },function(){
+// 	$(this).find('.row').css({
+// 		"transform-origin":"50% 50%  -100px",
+// 		"animation-duration":"5s"
+// 	});
+// })
